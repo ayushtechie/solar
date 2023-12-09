@@ -19,6 +19,9 @@ export default function Carousel() {
         <img src='solar11.jpg' alt="Image1" className='h-full w-full' />
       </SplideSlide>
       <SplideSlide>
+        <img src="solar111.jpg" alt="Image2" className='h-full w-full' />
+      </SplideSlide>
+      <SplideSlide>
         <img src="solar1.jpg" alt="Image2" className='h-full w-full' />
       </SplideSlide>
     </Splide>

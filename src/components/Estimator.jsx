@@ -37,17 +37,14 @@ export default function Estimator() {
 
   return (
     <>
-      <form
-        
-        className="flex flex-col py-12 justify-evenly items-stretch max-w-screen-md mx-auto "
-      >
+      <form className="flex flex-col py-12 justify-evenly items-stretch max-w-screen-md mx-auto ">
         <p className="text-center text-2xl font-bold py-2">
           Design your system
         </p>
         <div className="flex w-full flex-wrap my-5">
           {/* Residential Connection Type */}
           <div
-            className={`conn-type flex flex-row w-1/3 px-3 py-2 justify-center items-center cursor-pointer ${
+            className={`conn-type flex flex-col sm:flex-row w-1/3 px-3 py-2 justify-center items-center cursor-pointer ${
               selectedConnectionType === "residential"
                 ? "border-2 rounded border-b-transparent border-blue-700 -mb-0.5 z-10 bg-white"
                 : ""
@@ -73,7 +70,7 @@ export default function Estimator() {
 
           {/* Commercial Connection Type */}
           <div
-            className={`conn-type flex flex-row w-1/3 px-3 py-2 justify-center items-center cursor-pointer ${
+            className={`conn-type flex flex-col sm:flex-row w-1/3 px-3 py-2 justify-center items-center cursor-pointer ${
               selectedConnectionType === "commercial"
                 ? "border-2 rounded border-b-transparent border-blue-700 -mb-0.5 z-10 bg-white"
                 : ""
@@ -98,8 +95,7 @@ export default function Estimator() {
           </div>
 
           {/* Society Connection Type */}
-          <div
-            className={`conn-type flex flex-row w-1/3 px-3 py-2 justify-center items-center cursor-pointer ${
+          <div className={`conn-type flex flex-col sm:flex-row w-1/3 px-3 py-2 justify-center items-center cursor-pointer ${
               selectedConnectionType === "society"
                 ? "border-2 rounded border-b-transparent border-blue-700 -mb-0.5 z-10 bg-white"
                 : ""
@@ -123,8 +119,8 @@ export default function Estimator() {
             <p className="font-bold text-xl text-blue-700">Society</p>
           </div>
 
-          <div className="flex flex-row w-full py-5 px-3 border-2 rounded border-blue-700">
-            <div className="flex-auto w-4/12">
+          <div className="sm:flex flex-row w-full py-5 px-3 border-2 rounded border-blue-700">
+            <div className="flex-auto sm:w-4/12">
               <label htmlFor="pincode" className="block">
                 What is your pincode?
               </label>
@@ -137,7 +133,7 @@ export default function Estimator() {
                 onChange={(e) => setPincode(e.target.value)}
               />
             </div>
-            <div className="flex-auto w-5/12">
+            <div className="flex-auto sm:w-5/12">
               <label htmlFor="Bill" className="flex items-center">
                 Average monthly Bill
                 <svg
@@ -164,7 +160,7 @@ export default function Estimator() {
                 onChange={(e) => setBill(e.target.value)}
               />
             </div>
-            <div className="flex-auto w-3/12">
+            <div className="flex-auto sm:w-3/12">
               <label htmlFor="roof-area" className="block">
                 Roof area (sqft)
               </label>
