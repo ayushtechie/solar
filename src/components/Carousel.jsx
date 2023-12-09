@@ -16,10 +16,10 @@ export default function Carousel() {
         height: '90vh',
         }} className='p-0'>
       <SplideSlide>
-        <img src="solar1.jpg" alt="Image 1" className='h-full w-full' />
+        <img src='solar11.jpg' alt="Image1" className='h-full w-full' />
       </SplideSlide>
       <SplideSlide>
-        <img src="solar1.jpg" alt="Image 2" className='h-full w-full' />
+        <img src="solar1.jpg" alt="Image2" className='h-full w-full' />
       </SplideSlide>
     </Splide>
   );
