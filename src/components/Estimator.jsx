@@ -120,12 +120,13 @@ export default function Estimator() {
           </div>
 
           <div className="sm:flex flex-row w-full py-5 px-3 border-2 rounded border-blue-700">
-            <div className="flex-auto sm:w-4/12">
-              <label htmlFor="pincode" className="block">
+            
+            <div className="flex-auto sm:w-4/12 px-5 py-2">
+              <label htmlFor="pincode" className="block text-md font-medium leading-6 text-gray-900">
                 What is your pincode?
               </label>
-
               <input
+                className="block w-full rounded-md border-0 mt-2 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 type="text"
                 name="pincode"
                 id="pincode"
@@ -133,8 +134,9 @@ export default function Estimator() {
                 onChange={(e) => setPincode(e.target.value)}
               />
             </div>
-            <div className="flex-auto sm:w-5/12">
-              <label htmlFor="Bill" className="flex items-center">
+
+            <div className="flex-auto sm:w-5/12 px-5 my-2">
+              <label htmlFor="Bill" className="flex items-center text-md font-medium leading-6 text-gray-900">
                 Average monthly Bill
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -153,6 +155,7 @@ export default function Estimator() {
               </label>
 
               <input
+                className="block w-full rounded-md border-0 mt-2 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 type="text"
                 name="Bill"
                 id="Bill"
@@ -160,12 +163,14 @@ export default function Estimator() {
                 onChange={(e) => setBill(e.target.value)}
               />
             </div>
-            <div className="flex-auto sm:w-3/12">
-              <label htmlFor="roof-area" className="block">
+
+            <div className="flex-auto sm:w-3/12 px-5 py-2">
+              <label htmlFor="roof-area" className="block text-md font-medium leading-6 text-gray-900">
                 Roof area (sqft)
               </label>
 
               <input
+              className="block w-full rounded-md border-0 mt-2 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 type="text"
                 name="roof-area"
                 id="roof-area"
