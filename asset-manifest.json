@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/solar/static/css/main.bbf2a769.css",
-    "main.js": "/solar/static/js/main.5d6706ff.js",
+    "main.css": "/solar/static/css/main.741803cb.css",
+    "main.js": "/solar/static/js/main.d23e5437.js",
     "static/js/787.d5fa4d18.chunk.js": "/solar/static/js/787.d5fa4d18.chunk.js",
     "index.html": "/solar/index.html",
-    "main.bbf2a769.css.map": "/solar/static/css/main.bbf2a769.css.map",
-    "main.5d6706ff.js.map": "/solar/static/js/main.5d6706ff.js.map",
+    "main.741803cb.css.map": "/solar/static/css/main.741803cb.css.map",
+    "main.d23e5437.js.map": "/solar/static/js/main.d23e5437.js.map",
     "787.d5fa4d18.chunk.js.map": "/solar/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbf2a769.css",
-    "static/js/main.5d6706ff.js"
+    "static/css/main.741803cb.css",
+    "static/js/main.d23e5437.js"
   ]
 }
