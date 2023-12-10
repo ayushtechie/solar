@@ -41,7 +41,7 @@ export default function Estimator() {
         <p className="text-center text-2xl font-bold py-2">
           Design your system
         </p>
-        <div className="flex w-full flex-wrap my-5">
+        <div className="flex w-full px-5 flex-wrap my-5">
           {/* Residential Connection Type */}
           <div
             className={`conn-type flex flex-col sm:flex-row w-1/3 px-3 py-2 justify-center items-center cursor-pointer ${
@@ -51,7 +51,7 @@ export default function Estimator() {
             }`}
             onClick={() => handleConnectionTypeClick("residential")}
           >
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -64,8 +64,9 @@ export default function Estimator() {
                 strokeLinejoin="round"
                 d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
               />
-            </svg>
-            <p className="font-bold text-xl text-blue-700">Residential</p>
+            </svg> */}
+            <img src="residential.png" alt="residential" className="w-9 h-9" />
+            <p className="font-bold text-md sm:text-xl text-blue-700">Residential</p>
           </div>
 
           {/* Commercial Connection Type */}
@@ -91,7 +92,7 @@ export default function Estimator() {
                 d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
               />
             </svg>
-            <p className="font-bold text-xl text-blue-700">Commercial</p>
+            <p className="font-bold sm:text-xl text-md text-blue-700">Commercial</p>
           </div>
 
           {/* Society Connection Type */}
@@ -116,12 +117,12 @@ export default function Estimator() {
                 d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"
               />
             </svg>
-            <p className="font-bold text-xl text-blue-700">Society</p>
+            <p className="font-bold sm:text-xl text-md text-blue-700">Society</p>
           </div>
 
-          <div className="sm:flex flex-row w-full py-5 px-3 border-2 rounded border-blue-700">
+          <div className="sm:flex flex-row w-full py-5 px-1 border-2 rounded border-blue-700">
             
-            <div className="flex-auto sm:w-4/12 px-5 py-2">
+            <div className="flex-auto sm:w-4/12 px-2 py-2">
               <label htmlFor="pincode" className="block text-md font-medium leading-6 text-gray-900">
                 What is your pincode?
               </label>
@@ -135,7 +136,7 @@ export default function Estimator() {
               />
             </div>
 
-            <div className="flex-auto sm:w-5/12 px-5 my-2">
+            <div className="flex-auto sm:w-5/12 px-2 my-2">
               <label htmlFor="Bill" className="flex items-center text-md font-medium leading-6 text-gray-900">
                 Average monthly Bill
                 <svg
@@ -144,7 +145,7 @@ export default function Estimator() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-4 h-4"
+                  className="w-5 h-5"
                 >
                   <path
                     strokeLinecap="round"
@@ -164,7 +165,7 @@ export default function Estimator() {
               />
             </div>
 
-            <div className="flex-auto sm:w-3/12 px-5 py-2">
+            <div className="flex-auto sm:w-3/12 px-2 py-2">
               <label htmlFor="roof-area" className="block text-md font-medium leading-6 text-gray-900">
                 Roof area (sqft)
               </label>
@@ -188,7 +189,7 @@ export default function Estimator() {
         </div>
       </form>
       {/* Display Calculated Size */}
-      {calculatedSize !== null && (
+      {(calculatedSize !== null && calculatedSize !== 0) && (
         <div className="mt-5">
           <p className="text-center text-xl font-bold">
             Calculated Solar Power Size:
