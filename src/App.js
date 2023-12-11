@@ -8,6 +8,7 @@ import { Footer } from './components/Footer';
 import { CardDefault } from './components/Card';
 import Logos from './components/Logos';
 import Estimator from './components/Estimator';
+import Whyus from './components/Whyus';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navigation/>
       <Carousel/>
       <Estimator/>
+      <Whyus/>
       <Stats/>
       <CardDefault/>
       <Logos/>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@material-tailwind/react";
 
-import residential from "../images/residential.png"
+import residential from "../images/residential.png";
 
 const pincodeMapping = {
     "201301": "Noida",
