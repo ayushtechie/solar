@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/solar/static/css/main.37f45508.css",
-    "main.js": "/solar/static/js/main.094c4443.js",
+    "main.css": "/solar/static/css/main.82bd3c0f.css",
+    "main.js": "/solar/static/js/main.66c2c5d3.js",
     "static/js/787.d5fa4d18.chunk.js": "/solar/static/js/787.d5fa4d18.chunk.js",
     "static/media/solar111.jpg": "/solar/static/media/solar111.cab27c3d3f780c16ecf0.jpg",
     "static/media/solar1.jpg": "/solar/static/media/solar1.6f86476bf7bca2793596.jpg",
     "static/media/solar11.jpg": "/solar/static/media/solar11.30b7e0c781bb46bf3e03.jpg",
     "static/media/residential.png": "/solar/static/media/residential.820bbcd8a99eeb581ebe.png",
     "index.html": "/solar/index.html",
-    "main.37f45508.css.map": "/solar/static/css/main.37f45508.css.map",
-    "main.094c4443.js.map": "/solar/static/js/main.094c4443.js.map",
+    "main.82bd3c0f.css.map": "/solar/static/css/main.82bd3c0f.css.map",
+    "main.66c2c5d3.js.map": "/solar/static/js/main.66c2c5d3.js.map",
     "787.d5fa4d18.chunk.js.map": "/solar/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37f45508.css",
-    "static/js/main.094c4443.js"
+    "static/css/main.82bd3c0f.css",
+    "static/js/main.66c2c5d3.js"
   ]
 }
