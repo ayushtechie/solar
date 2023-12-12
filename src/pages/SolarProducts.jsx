@@ -1,12 +1,12 @@
 import { Footer } from "../components/Footer";
 
 const SolarProducts = () => {
-    return (
-        <>
-        <h1>SolarProducts</h1>
-        <Footer/>
-        </>
-    )
-}
+  return (
+    <div className="sm:mt-20 mt-14">
+      <h1>SolarProducts</h1>
+      <Footer />
+    </div>
+  );
+};
 
 export default SolarProducts;

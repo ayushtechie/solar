@@ -39,7 +39,7 @@ export default function Estimator() {
 
   return (
     <>
-      <form className="flex flex-col py-12 justify-evenly items-stretch max-w-screen-md mx-auto ">
+      <form className="flex flex-col py-6 justify-evenly items-stretch max-w-screen-md mx-auto ">
         <p className="text-center text-2xl font-bold py-2">
           Design your system
         </p>
