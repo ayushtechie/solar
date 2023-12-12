@@ -10,7 +10,7 @@ export default function Hero() {
         src={solarshophero}
         alt="natureimage"
       />
-      <figcaption className="text-center absolute sm:top-44 top-20 sm:left-2/3 left-24 sm:w-[calc(50%-10rem)] sm:-translate-x-2/4 rounded-xl border border-white bg-white/75 py-4 px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
+      <figcaption className="text-center absolute sm:top-44 top-10 sm:left-2/3 left-20 sm:w-[calc(50%-10rem)] sm:-translate-x-2/4 rounded-xl border border-white bg-white/75 sm:py-4 py-2 sm:px-6 px-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
         <div>
           <Typography color="blue-gray" className="sm:text-3xl text-lg font-bold">
             Save With Solar

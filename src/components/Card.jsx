@@ -10,8 +10,8 @@ import {
 export function CardDefault() {
   return (
     <>
-      <h2 className="text-6xl text-center pt-4 pb-1 font-bold leading-7 text-blue-900 sm:truncate sm:text-3xl sm:tracking-tight">
-        Categories
+      <h2 className="text-xl text-center pt-4 pb-1 font-bold leading-7 text-blue-900 sm:truncate sm:text-3xl sm:tracking-tight">
+        Looking for
       </h2>
       <div className="sm:flex justify-evenly py-8">
         <Card className="mt-6 sm:w-72 self-center">
@@ -23,7 +23,7 @@ export function CardDefault() {
           </CardHeader>
           <CardBody>
             <Typography variant="h5" color="blue-gray" className="mb-2">
-              EPC
+              EPC Contractor
             </Typography>
           </CardBody>
           <CardFooter className="pt-0">

@@ -1,12 +1,13 @@
 import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Estimator', href: '#', current: false },
-  { name: 'EPC', href: '#', current: false },
-  { name: 'Solar Products', href: '#', current: false },
+  { name: 'Home', href: '/home', current: true },
+  { name: 'Estimator', href: '/estimater', current: false },
+  { name: 'EPC', href: '/epc', current: false },
+  { name: 'Solar Products', href: '/solar-pannel', current: false },
 ]
 
 function classNames(...classes) {
@@ -43,9 +44,9 @@ export default function Navigation() {
                 <div className="hidden ml-auto sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
@@ -53,7 +54,7 @@ export default function Navigation() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -67,8 +68,8 @@ export default function Navigation() {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  as="Link"
+                  to={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'

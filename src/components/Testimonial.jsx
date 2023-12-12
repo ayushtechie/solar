@@ -8,8 +8,10 @@ export default function Testimonial() {
           <figure className="mt-10">
             <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
               <p>
-                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-                molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+                “Explore sustainable energy solutions with solar panels.
+        Harness the power of the sun for a brighter and greener future.
+        Our advanced technology and commitment to renewable energy make us your trusted partner in solar innovation.
+        Discover efficient and eco-friendly solutions with our range of solar panels – powering tomorrow, today.”
               </p>
             </blockquote>
             <figcaption className="mt-10">
