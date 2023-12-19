@@ -1,6 +1,6 @@
 import Testimonial from "../components/Testimonial";
 import { Footer } from "../components/Footer";
-import { CardDefault } from "../components/Card";
+import { LookingFor } from "../components/LookingFor";
 import Logos from "../components/Logos";
 import Whyus from "../components/Whyus";
 import Hero from "../components/Hero";
@@ -12,7 +12,7 @@ const Home = () => {
       <div className="sm:mt-20 mt-14">
         <Hero />
         <Estimater />
-        <CardDefault />
+        <LookingFor />
         <Whyus />
         <Logos />
         <Testimonial />
