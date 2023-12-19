@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 
+import Logo from "../images/SolarShopLogo1.jpg"
+
 const Layout = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,7 +18,7 @@ const Layout = () => {
   return (
     <>
       <nav className="header">
-        <a href="/solar">LOGO</a>
+        <a href="/solar"><img src={Logo} alt="logo" width={100} height={100} className="h-full w-full" /></a>
         <div className={`menu-btn ${isOpen ? "open" : ""}`} onClick={toggle}>
           <div className="menu-btn__lines"></div>
         </div>
