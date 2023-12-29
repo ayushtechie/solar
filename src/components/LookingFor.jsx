@@ -9,6 +9,7 @@ import {
 
 import SolarImg from '../images/Solar.jpg'
 import EPC from '../images/EPCimage.jpeg'
+import EPCcontractor from '../images/epcImage.jpg';
 import SolarPanelWithSun from '../images/SolarPanelWithSun.jpeg'
 import SolarPanelResidential from '../images/SolarPanelResidential.jpeg'
 import { Link } from "react-router-dom";
@@ -22,7 +23,7 @@ export function LookingFor() {
       <div className="sm:flex justify-evenly py-8">
         <Card className="mt-6 sm:w-72 self-center">
           <CardHeader color="blue-gray" className="relative h-56">
-            <img src={EPC} alt="cardimage" className="h-full w-full"/>
+            <img src={EPCcontractor} alt="cardimage" className="h-full w-full"/>
           </CardHeader>
           <CardBody>
             <Typography variant="h5" color="blue-gray" className="mb-2">

@@ -16,7 +16,7 @@ export default function Hero() {
             Save With Solar
           </Typography>
           <Typography color="gray" className="mt-2 font-normal sm:text-xl">
-            now have some fun with your sun
+            Still paying for your electricity bill ?
           </Typography>
         </div>
       </figcaption>
