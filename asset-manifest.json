@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/solar/static/css/main.dc345788.css",
-    "main.js": "/solar/static/js/main.5150558a.js",
+    "main.css": "/solar/static/css/main.2f6987c3.css",
+    "main.js": "/solar/static/js/main.72625d65.js",
     "static/js/787.d5fa4d18.chunk.js": "/solar/static/js/787.d5fa4d18.chunk.js",
     "static/media/SOLARSHOP.png": "/solar/static/media/SOLARSHOP.d70a2b02a72a4e6d1da3.png",
     "static/media/solarshophero.jpg": "/solar/static/media/solarshophero.30b7e0c781bb46bf3e03.jpg",
@@ -9,13 +9,14 @@
     "static/media/epcImage.jpg": "/solar/static/media/epcImage.e3889d776bb27d58a2f5.jpg",
     "static/media/Solar.jpg": "/solar/static/media/Solar.dfbc788d52456c1c0d86.jpg",
     "static/media/SolarPanelWithSun.jpeg": "/solar/static/media/SolarPanelWithSun.a7e5643aac0777324cab.jpeg",
+    "static/media/renewable-energy-svgrepo-com.svg": "/solar/static/media/renewable-energy-svgrepo-com.3e25b7ce13b8920956b33b1b35da555e.svg",
     "index.html": "/solar/index.html",
-    "main.dc345788.css.map": "/solar/static/css/main.dc345788.css.map",
-    "main.5150558a.js.map": "/solar/static/js/main.5150558a.js.map",
+    "main.2f6987c3.css.map": "/solar/static/css/main.2f6987c3.css.map",
+    "main.72625d65.js.map": "/solar/static/js/main.72625d65.js.map",
     "787.d5fa4d18.chunk.js.map": "/solar/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc345788.css",
-    "static/js/main.5150558a.js"
+    "static/css/main.2f6987c3.css",
+    "static/js/main.72625d65.js"
   ]
 }
