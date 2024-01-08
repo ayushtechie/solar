@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <div className="">
-        <div className="fixed z-10"><DrawerWithForm/></div>
+        <div className="fixed z-50"><DrawerWithForm/></div>
         <Hero />
         <Estimater />
         <LookingFor />

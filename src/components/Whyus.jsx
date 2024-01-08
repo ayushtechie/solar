@@ -1,7 +1,7 @@
 export default function Whyus() {
   return (
     <section className="flex flex-col items-center px-10">
-      <h1 className="text-center text-2xl font-bold my-2">Why Solar Shop..?</h1>
+      <h1 className="text-center text-2xl font-bold my-2">Why Solar..?</h1>
 
       <div className=" separator max-w-sm relative">
         <span
@@ -67,7 +67,7 @@ export default function Whyus() {
           </svg>
 
           <h5 className="font-bold my-2 text-blue-900">
-            Locked in electricity traffs
+            Locked in electricity tariffs
           </h5>
           <p className="text-sm">
             Compensate for 1% to 3% yearly grid cost hike with efficient solar

@@ -11,9 +11,11 @@ import {
   Avatar,
   Card,
   IconButton,
+  Home,
 } from "@material-tailwind/react";
 import {
   CubeTransparentIcon,
+  TableCellsIcon,
   UserCircleIcon,
   CodeBracketSquareIcon,
   Square3Stack3DIcon,
@@ -25,11 +27,13 @@ import {
   RocketLaunchIcon,
   WrenchScrewdriverIcon,
   Bars2Icon,
+  HomeIcon,
 } from "@heroicons/react/24/solid";
  
 import SolarShop from "../images/SOLARSHOP.png";
 import menuicon from "../images/renewable-energy-svgrepo-com.svg";
 import { DrawerWithForm } from "./DrawerWithForm";
+import { Link } from "react-router-dom";
 // profile menu component
 const profileMenuItems = [
   {
@@ -161,7 +165,7 @@ function NavListMenu() {
         <MenuHandler>
           <Typography as="a" href="#" variant="small" className="font-normal">
             <MenuItem className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full">
-              <Square3Stack3DIcon className="h-[18px] w-[18px] text-blue-gray-500" />{" "}
+              <Square3Stack3DIcon className="h-[18px] w-[18px] text-green-600" />{" "}
               Solar Products{" "}
               <ChevronDownIcon
                 strokeWidth={2}
@@ -174,7 +178,7 @@ function NavListMenu() {
         </MenuHandler>
         <MenuList className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid">
           <Card
-            color="blue"
+            color="orange"
             shadow={false}
             variant="gradient"
             className="col-span-3 grid h-full w-full place-items-center rounded-md"
@@ -187,7 +191,7 @@ function NavListMenu() {
         </MenuList>
       </Menu>
       <MenuItem className="flex items-center gap-2 font-medium text-blue-gray-900 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px] text-blue-gray-500" />{" "}
+        <Square3Stack3DIcon className="h-[18px] w-[18px] text-green-600" />{" "}
         Solar Products{" "}
       </MenuItem>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
@@ -199,29 +203,35 @@ function NavListMenu() {
  
 // nav list component
 const navListItems = [
-  
+  {
+    label: "Home",
+    url: "/",
+    icon: HomeIcon,
+  },
   {
     label: "EPC",
     url: "/epc",
-    icon: CubeTransparentIcon,
+    icon: TableCellsIcon,
   },
   {
     label: "Estimater",
     url: "/estimater",
     icon: CodeBracketSquareIcon,
   },
-  {
-    label: "Contact Us",
-    icon: UserCircleIcon,
-  },
+  
 ];
  
 function NavList() {
   return (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-      <NavListMenu />
+      
       {navListItems.map(({ label, icon, url }, key) => (
-        <Typography
+        <>
+        <Link to={url} className="font-medium text-blue-gray-500"><MenuItem className="flex items-center gap-2 lg:rounded-full">
+            {React.createElement(icon, { className: "h-[18px] w-[18px] text-green-600" })}{" "}
+            <span className="text-gray-900"> {label}</span>
+          </MenuItem> </Link>
+        {/* <Typography
           key={label}
           as="a"
           href={url}
@@ -233,8 +243,11 @@ function NavList() {
             {React.createElement(icon, { className: "h-[18px] w-[18px]" })}{" "}
             <span className="text-gray-900"> {label}</span>
           </MenuItem>
-        </Typography>
+        </Typography> */}
+        </>
+        
       ))}
+      <NavListMenu />
     </ul>
   );
 }
@@ -252,7 +265,7 @@ export function ComplexNav() {
   }, []);
  
   return (
-    <Navbar className="mx-auto max-w-screen-4xl p-2 lg:rounded-full lg:pl-6">
+    <Navbar className="mx-auto max-w-screen-4xl p-2 lg:rounded-full lg:pl-6 sticky top-0 z-50" style={{backgroundColor: "#fff0d3"}}>
       <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
