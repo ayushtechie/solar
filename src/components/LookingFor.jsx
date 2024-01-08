@@ -8,7 +8,6 @@ import {
 } from "@material-tailwind/react";
 
 import SolarImg from '../images/Solar.jpg'
-import EPC from '../images/EPCimage.jpeg'
 import EPCcontractor from '../images/epcImage.jpg';
 import SolarPanelWithSun from '../images/SolarPanelWithSun.jpeg'
 import SolarPanelResidential from '../images/SolarPanelResidential.jpeg'

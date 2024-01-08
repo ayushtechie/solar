@@ -37,7 +37,7 @@ export function Table() {
         <thead>
           <tr>
             {TABLE_HEAD.map((head) => (
-              <th key={head} className="border-b border-blue-gray-100 bg-blue-400 p-4">
+              <th key={head} className="border-b border-blue-gray-100 bg-blue-700 p-4">
                 <Typography
                   variant="small"
                   color="white"

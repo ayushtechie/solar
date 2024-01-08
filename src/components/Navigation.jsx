@@ -7,7 +7,10 @@ const navigation = [
   { name: 'Home', href: '/home', current: true },
   { name: 'Estimator', href: '/estimater', current: false },
   { name: 'EPC', href: '/epc', current: false },
-  { name: 'Solar Products', href: '/solar-pannel', current: false },
+  { name: 'Solar Products',
+  href: '/solar-pannel',
+  current: false,
+},
 ]
 
 function classNames(...classes) {
