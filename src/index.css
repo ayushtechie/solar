@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.primary-color {
+  color: #0980b9;
+}
+
+.secondary-color {
+  color: #337037;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@material-tailwind/react";
 
 import residential from "../images/residential.png";
+import { DrawerWithForm } from "./DrawerWithForm";
 
 const pincodeMapping = {
     "201301": "Noida",
@@ -185,9 +186,10 @@ export default function Estimator() {
         </div>
         <div className="flex justify-center">
           {/* <button type="submit" className="bg-sky-600/50">Design</button> */}
-          <Button color="blue" type="submit" onClick={handleDesignForm}>
+          {/* <Button color="blue" type="submit" onClick={handleDesignForm}>
             Design
-          </Button>
+          </Button> */}
+          <div className=""><DrawerWithForm/></div>
         </div>
       </form>
       {/* Display Calculated Size */}

@@ -1,4 +1,5 @@
 import React from "react";
+import { SocialIcon } from "react-social-icons";
 import {
   Navbar,
   MobileNav,
@@ -29,7 +30,7 @@ import {
   Bars2Icon,
   HomeIcon,
 } from "@heroicons/react/24/solid";
- 
+
 import SolarShop from "../images/SOLARSHOP.png";
 import menuicon from "../images/renewable-energy-svgrepo-com.svg";
 import { DrawerWithForm } from "./DrawerWithForm";
@@ -57,12 +58,12 @@ const profileMenuItems = [
     icon: PowerIcon,
   },
 ];
- 
+
 function ProfileMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
- 
+
   const closeMenu = () => setIsMenuOpen(false);
- 
+
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
       <MenuHandler>
@@ -95,7 +96,7 @@ function ProfileMenu() {
               onClick={closeMenu}
               className={`flex items-center gap-2 rounded ${
                 isLastItem
-                  ? "hover:bg-red-500/10 focus:bg-red-500/10 active:bg-red-500/10"
+                  ? "hover:bg-green-500/10 focus:bg-green-500/10 active:bg-green-500/10"
                   : ""
               }`}
             >
@@ -118,47 +119,43 @@ function ProfileMenu() {
     </Menu>
   );
 }
- 
+
 // nav list menu
 const navListMenuItems = [
   {
     title: "Solar Plant",
-    description:
-      "A complete set of UI Elements for building ",
+    description: "A complete set of UI Elements for building ",
   },
   {
     title: "Solar Water Heater",
-    description:
-      "A complete set of UI Elements for building ",
+    description: "A complete set of UI Elements for building ",
   },
   {
     title: "Solar Lights",
-    description:
-      "A complete set of UI Elements for building ",
+    description: "A complete set of UI Elements for building ",
   },
   {
     title: "Solar Pumps",
-    description:
-      "A complete set of UI Elements for building ",
+    description: "A complete set of UI Elements for building ",
   },
 ];
- 
+
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
- 
+
   const renderItems = navListMenuItems.map(({ title, description }) => (
     <a href="#" key={title}>
       <MenuItem>
         <Typography variant="h6" color="blue-gray" className="mb-1">
           {title}
         </Typography>
-        <Typography variant="small" color="gray" className="font-normal">
+        {/* <Typography variant="small" color="gray" className="font-normal">
           {description}
-        </Typography>
+        </Typography> */}
       </MenuItem>
     </a>
   ));
- 
+
   return (
     <React.Fragment>
       <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
@@ -176,7 +173,7 @@ function NavListMenu() {
             </MenuItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid">
+        <MenuList className="hidden w-[22rem] grid-cols-7 gap-3 overflow-visible lg:grid">
           <Card
             color="orange"
             shadow={false}
@@ -200,7 +197,25 @@ function NavListMenu() {
     </React.Fragment>
   );
 }
- 
+
+// social media
+const socialMedia = [
+  {
+    name: "facebook",
+    icon: HomeIcon,
+    url: "https://www.facebook.com",
+  },
+  {
+    name: "facebook",
+    icon: HomeIcon,
+    url: "https://www.instagram.com/solarshopsolutions/",
+  },
+  {
+    name: "Twitter",
+    icon: HomeIcon,
+    url: "https://www.x.com/solarshopsolu",
+  },
+];
 // nav list component
 const navListItems = [
   {
@@ -218,20 +233,23 @@ const navListItems = [
     url: "/estimater",
     icon: CodeBracketSquareIcon,
   },
-  
 ];
- 
+
 function NavList() {
   return (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-      
-      {navListItems.map(({ label, icon, url }, key) => (
-        <>
-        <Link to={url} className="font-medium text-blue-gray-500"><MenuItem className="flex items-center gap-2 lg:rounded-full">
-            {React.createElement(icon, { className: "h-[18px] w-[18px] text-green-600" })}{" "}
-            <span className="text-gray-900"> {label}</span>
-          </MenuItem> </Link>
-        {/* <Typography
+    <>
+      <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
+        {navListItems.map(({ label, icon, url }, key) => (
+          <>
+            <Link to={url} className="font-medium text-blue-gray-500">
+              <MenuItem className="flex items-center gap-2 lg:rounded-full">
+                {React.createElement(icon, {
+                  className: "h-[18px] w-[18px] text-green-600",
+                })}{" "}
+                <span className="text-gray-900"> {label}</span>
+              </MenuItem>{" "}
+            </Link>
+            {/* <Typography
           key={label}
           as="a"
           href={url}
@@ -244,35 +262,45 @@ function NavList() {
             <span className="text-gray-900"> {label}</span>
           </MenuItem>
         </Typography> */}
-        </>
-        
-      ))}
-      <NavListMenu />
-    </ul>
+          </>
+        ))}
+        <NavListMenu />
+        <ul className="mt-2 mb-4 flex gap-2 lg:mb-0 lg:mt-0 lg:mr-2 m-auto lg:items-center">
+          {socialMedia.map(({ icon, url }, key) => (
+            <SocialIcon url={url} style={{ height: 25, width: 25 }} target="_blank"/>
+          ))}
+        </ul>
+      </ul>
+    </>
   );
 }
- 
+
 export function ComplexNav() {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
- 
+
   const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
- 
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setIsNavOpen(false),
+      () => window.innerWidth >= 960 && setIsNavOpen(false)
     );
   }, []);
- 
+
   return (
-    <Navbar className="mx-auto max-w-screen-4xl p-2 lg:rounded-full lg:pl-6 sticky top-0 z-50" style={{backgroundColor: "#fff0d3"}}>
+    <Navbar
+      className="mx-auto max-w-screen-4xl p-0 lg:rounded-full lg:pl-6 sticky top-0 z-50"
+      style={{ backgroundColor: "#fff0d3" }}
+    >
       <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
-          className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
+          className="mr-4 ml-2 flex items-center cursor-pointer text-2xl font-bold"
         >
           <img src={SolarShop} alt="Logo" width={80} height={80} />
+          <span className="primary-color"> Solar</span>
+          <span className="secondary-color">ShopSolutions</span>
         </Typography>
         <div className="hidden lg:block">
           <NavList />
@@ -286,7 +314,7 @@ export function ComplexNav() {
         >
           <Bars2Icon className="h-6 w-6" />
         </IconButton>
- 
+
         {/* <Button size="sm" variant="text">
           <span>Log In</span>
         </Button>
@@ -294,7 +322,7 @@ export function ComplexNav() {
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">
         <NavList />
-        <DrawerWithForm/>
+        {/* <DrawerWithForm /> */}
       </MobileNav>
     </Navbar>
   );
