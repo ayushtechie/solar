@@ -5,12 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { ThemeProvider } from "@material-tailwind/react";
+import { HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-    <App />
+      <HashRouter>
+        <App />
+      </HashRouter>
     </ThemeProvider>
   </React.StrictMode>
 );
