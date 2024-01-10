@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.813952e8.css",
-    "main.js": "/static/js/main.67d33c42.js",
-    "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
-    "static/media/SOLARSHOP.png": "/static/media/SOLARSHOP.d70a2b02a72a4e6d1da3.png",
-    "static/media/solarshophero.jpg": "/static/media/solarshophero.30b7e0c781bb46bf3e03.jpg",
-    "static/media/residential.png": "/static/media/residential.820bbcd8a99eeb581ebe.png",
-    "static/media/Mont-HeavyDEMO.otf": "/static/media/Mont-HeavyDEMO.a1c041a8d8e27fc771db.otf",
-    "static/media/epcImage.jpg": "/static/media/epcImage.e3889d776bb27d58a2f5.jpg",
-    "static/media/Solar.jpg": "/static/media/Solar.dfbc788d52456c1c0d86.jpg",
-    "static/media/SolarPanelWithSun.jpeg": "/static/media/SolarPanelWithSun.a7e5643aac0777324cab.jpeg",
-    "index.html": "/index.html",
-    "main.813952e8.css.map": "/static/css/main.813952e8.css.map",
-    "main.67d33c42.js.map": "/static/js/main.67d33c42.js.map",
-    "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
+    "main.css": "/solar/static/css/main.ba67e674.css",
+    "main.js": "/solar/static/js/main.8832b2fb.js",
+    "static/js/787.d5fa4d18.chunk.js": "/solar/static/js/787.d5fa4d18.chunk.js",
+    "static/media/SOLARSHOP.png": "/solar/static/media/SOLARSHOP.d70a2b02a72a4e6d1da3.png",
+    "static/media/solarshophero.jpg": "/solar/static/media/solarshophero.30b7e0c781bb46bf3e03.jpg",
+    "static/media/residential.png": "/solar/static/media/residential.820bbcd8a99eeb581ebe.png",
+    "static/media/Mont-HeavyDEMO.otf": "/solar/static/media/Mont-HeavyDEMO.a1c041a8d8e27fc771db.otf",
+    "static/media/epcImage.jpg": "/solar/static/media/epcImage.e3889d776bb27d58a2f5.jpg",
+    "static/media/Solar.jpg": "/solar/static/media/Solar.dfbc788d52456c1c0d86.jpg",
+    "static/media/SolarPanelWithSun.jpeg": "/solar/static/media/SolarPanelWithSun.a7e5643aac0777324cab.jpeg",
+    "index.html": "/solar/index.html",
+    "main.ba67e674.css.map": "/solar/static/css/main.ba67e674.css.map",
+    "main.8832b2fb.js.map": "/solar/static/js/main.8832b2fb.js.map",
+    "787.d5fa4d18.chunk.js.map": "/solar/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.813952e8.css",
-    "static/js/main.67d33c42.js"
+    "static/css/main.ba67e674.css",
+    "static/js/main.8832b2fb.js"
   ]
 }
