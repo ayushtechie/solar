@@ -6,36 +6,45 @@ import {
   IconButton,
   Input,
   Textarea,
-  PhoneArrowDownLeftIcon,
 } from "@material-tailwind/react";
 
-import emailjs from '@emailjs/browser';
- 
+import emailjs from "@emailjs/browser";
+
 export function DrawerWithForm() {
   const [open, setOpen] = React.useState(false);
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
 
-  const form = useRef();
+  const form1 = useRef();
 
-  const sendEmail = (e) => {
+  function sendEmail(e) {
     e.preventDefault();
 
-    alert('form submited');
-    emailjs.sendForm('service_ajx1p66', 'template_v6x15s7', form.current, '8OpAGolTLeBkMK5Um')
-      .then((result) => {
+    alert("form submited");
+    emailjs
+      .sendForm(
+        "service_ajx1p66",
+        "template_v6x15s7",
+        form1.current,
+        "8OpAGolTLeBkMK5Um"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-          alert('Form submitted successfully!');
-      }, (error) => {
+          alert("Form submitted successfully!");
+        },
+        (error) => {
           console.log(error.text);
-          alert('Error submitting the form. Please try again.');
-      });
-  };
- 
+          alert("Error submitting the form. Please try again.");
+        }
+      );
+  }
+
+  
   return (
     <React.Fragment>
       <Button onClick={openDrawer}>Design</Button>
-     <Drawer open={open} onClose={closeDrawer}>
+      <Drawer open={open} onClose={closeDrawer}>
         <div className="flex items-center justify-between px-4 pb-2">
           <Typography variant="h5" color="blue-gray">
             Contact Us
@@ -62,7 +71,11 @@ export function DrawerWithForm() {
             Write the message and then click button.
           </Typography>
         </div>
-        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6 p-4">
+        <form
+          ref={form1}
+          onSubmit={sendEmail}
+          className="flex flex-col gap-6 p-4"
+        >
           <Typography variant="h6" color="blue-gray" className="-mb-3">
             Your Email
           </Typography>

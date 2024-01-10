@@ -32,11 +32,11 @@ export function LookingFor() {
             EPC refers to Engineering, procurement and civil construction. In the solar industry, EPC companies are those who provide a one-stop solution for everything solar. With that, you don’t have to go to multiple vendors to assemble numerous components of a solar plant, EPC providers do that job for you. It is crucial for the successful installation of a solar power plant, especially when it is a large-scale project in MW. Let’s understand what EPC companies do when they undertake an industrial project
             </Typography> */}
           </CardBody>
-          <CardFooter className="pt-0">
+          {/* <CardFooter className="pt-0">
             <Link to='/epc'>
               <Button>Read More</Button>
             </Link>
-          </CardFooter>
+          </CardFooter> */}
         </Card>
         <Card className="mt-6 sm:w-72">
           <CardHeader color="blue-gray" className="relative h-56">
@@ -73,7 +73,7 @@ We offer solar PV panels in both monocrystalline and polycrystalline technologie
             </Link>
           </CardFooter> */}
         </Card>
-        <Card className="mt-6 sm:w-72">
+        {/* <Card className="mt-6 sm:w-72">
           <CardHeader color="blue-gray" className="relative h-56">
             <img src={SolarPanelResidential} alt="cardimage" className="h-full w-full"/>
           </CardHeader>
@@ -87,7 +87,7 @@ We offer solar PV panels in both monocrystalline and polycrystalline technologie
               <Button>Read More</Button>
             </Link>
           </CardFooter>
-        </Card>
+        </Card> */}
       </div>
     </>
   );

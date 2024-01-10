@@ -12,10 +12,10 @@ import {
   Avatar,
   Card,
   IconButton,
-  Home,
+
 } from "@material-tailwind/react";
 import {
-  CubeTransparentIcon,
+
   TableCellsIcon,
   UserCircleIcon,
   CodeBracketSquareIcon,
@@ -25,15 +25,13 @@ import {
   InboxArrowDownIcon,
   LifebuoyIcon,
   PowerIcon,
-  RocketLaunchIcon,
   WrenchScrewdriverIcon,
   Bars2Icon,
   HomeIcon,
 } from "@heroicons/react/24/solid";
 
 import SolarShop from "../images/SOLARSHOP.png";
-import menuicon from "../images/renewable-energy-svgrepo-com.svg";
-import { DrawerWithForm } from "./DrawerWithForm";
+
 import { Link } from "react-router-dom";
 // profile menu component
 const profileMenuItems = [

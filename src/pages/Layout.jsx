@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
-import SolarShop from "../images/SOLARSHOP.png";
-import { DropdownMenu } from "../components/DropdownMenu";
+import { Outlet } from "react-router-dom";
+
 import { ComplexNav } from "../components/ComplexNav";
 
 const Layout = () => {
