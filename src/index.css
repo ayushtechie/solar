@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Mont'; /* Provide a name for your font */
+  src: url('/src/Mont-HeavyDEMO.otf') format('opentype');
+  /* Adjust the path based on your project structure */
+}
+
+.mont-family {
+  font-family: 'Mont';
+}
+
 .primary-color {
   color: #0980b9;
 }

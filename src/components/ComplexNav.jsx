@@ -294,7 +294,7 @@ export function ComplexNav() {
         <Typography
           as="a"
           href="#"
-          className="mr-4 ml-2 flex items-center cursor-pointer text-2xl font-bold"
+          className="mr-4 ml-2 flex items-center cursor-pointer text-2xl font-bold mont-family"
         >
           <img src={SolarShop} alt="Logo" width={80} height={80} />
           <span className="primary-color"> Solar</span>
