@@ -1,4 +1,4 @@
-import { HashRouter as BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as HashRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
@@ -11,7 +11,7 @@ import Estimator from "./pages/Estimater";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
