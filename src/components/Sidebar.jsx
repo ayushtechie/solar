@@ -107,11 +107,42 @@ export function MultiLevelSidebar() {
             </List>
           </AccordionBody>
         </Accordion>
-
-        <div className="flex justify-center gap-x-4 items-center">
-        <InboxIcon className="h-5 w-5" />
-          <SelectColors />
-        </div>
+        <Accordion
+          open={open === 3}
+          icon={
+            <ChevronDownIcon
+              strokeWidth={2.5}
+              className={`mx-auto h-4 w-4 transition-transform ${
+                open === 3 ? "rotate-180" : ""
+              }`}
+            />
+          }
+        >
+          <ListItem className="p-0" selected={open === 3}>
+            <AccordionHeader
+              onClick={() => handleOpen(3)}
+              className="border-b-0 p-3"
+            >
+              <ListItemPrefix>
+                <InboxIcon className="h-5 w-5" />
+              </ListItemPrefix>
+              <Typography color="blue-gray" className="mr-auto font-normal">
+                Type
+              </Typography>
+            </AccordionHeader>
+          </ListItem>
+          <AccordionBody className="py-1">
+            <List className="p-0">
+              <ListItem>
+                <Checkbox label="Crystalline" />
+              </ListItem>
+              <ListItem>
+                <Checkbox label="Mono Crystalline" />
+              </ListItem>
+              
+            </List>
+          </AccordionBody>
+        </Accordion>
       </List>
     </Card>
   );
