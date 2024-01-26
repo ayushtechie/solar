@@ -31,17 +31,17 @@ const features = [
 
 export default function EpcHero() {
   return (
-    <div className="bg-white py-12 sm:py-16">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex lg:text-center">
-          <div className="w-7/12 bg-green-900 ">
+    <div className="bg-white">
+      <div className="">
+        <div className="flex items-center lg:text-center">
+          <div className="w-7/12 bg-green-400 ">
             <img src={EPCheroImage} alt="" className="opacity-50 " />
           </div>
           <div className="w-5/12">
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               EPC Contractor
             </p>
-            <p className="mt-6 px-8 text-left text-2xl leading-8 text-gray-600">
+            <p className="mt-6 px-10 text-left text-xl leading-8 text-gray-600">
               EPC refers to Engineering, procurement and civil construction. In
               the solar industry, EPC companies are those who provide a one-stop
               solution for everything solar. With that, you don’t have to go to

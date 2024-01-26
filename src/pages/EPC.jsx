@@ -6,7 +6,7 @@ import { DrawerWithForm } from "../components/DrawerWithForm";
 
 const EPC = () => {
   return (
-    <div className="sm:mt-20 mt-14">
+    <div>
       {/* <div className="fixed z-50"><DrawerWithForm/></div> */}
       <EpcHero/>
       <div className="lg:w-11/12 lg:mx-auto py-5">

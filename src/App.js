@@ -8,6 +8,7 @@ import EPC from "./pages/EPC";
 import Nopage from "./pages/NoPage";
 import SolarProducts from "./pages/SolarProducts";
 import Estimator from "./pages/Estimater";
+import SolarModule from "./pages/SolarModule";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/estimater" element={<Estimator />} />
           <Route path="/epc" element={<EPC />} />
-          <Route path="/solar-pannel" element={<SolarProducts />} />
+          <Route path="/solar-panel" element={<SolarProducts />} />
+          <Route path="/solar-panel/solar-module" element={<SolarModule />} />
           <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>

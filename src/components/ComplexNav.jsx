@@ -123,6 +123,7 @@ const navListMenuItems = [
   {
     title: "Solar Module",
     description: "A complete set of UI Elements for building ",
+    url: "/solar-panel/solar-module",
   },
   {
     title: "Solar Water Heater",
@@ -141,8 +142,8 @@ const navListMenuItems = [
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const renderItems = navListMenuItems.map(({ title, description }) => (
-    <a href="#" key={title}>
+  const renderItems = navListMenuItems.map(({ title, description, url }) => (
+    <Link to={url} key={title}>
       <MenuItem>
         <Typography variant="h6" color="blue-gray" className="mb-1">
           {title}
@@ -151,14 +152,14 @@ function NavListMenu() {
           {description}
         </Typography> */}
       </MenuItem>
-    </a>
+    </Link>
   ));
 
   return (
     <React.Fragment>
       <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
         <MenuHandler>
-          <Typography as="a" href="#" variant="small" className="font-normal">
+          <Typography as="a" href="#/solar-panel" variant="small" className="font-normal">
             <MenuItem className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full">
               <Square3Stack3DIcon className="h-[18px] w-[18px] text-green-600" />{" "}
               Solar Products{" "}
