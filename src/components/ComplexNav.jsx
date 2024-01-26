@@ -121,7 +121,7 @@ function ProfileMenu() {
 // nav list menu
 const navListMenuItems = [
   {
-    title: "Solar Plant",
+    title: "Solar Module",
     description: "A complete set of UI Elements for building ",
   },
   {

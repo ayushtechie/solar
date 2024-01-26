@@ -20,6 +20,7 @@ export function LookingFor() {
         Looking for
       </h2>
       <div className="sm:flex justify-evenly py-8">
+        <Link to='/epc'>
         <Card className="mt-6 sm:w-72 self-center">
           <CardHeader color="blue-gray" className="relative h-56">
             <img src={EPCcontractor} alt="cardimage" className="h-full w-full"/>
@@ -38,6 +39,8 @@ export function LookingFor() {
             </Link>
           </CardFooter> */}
         </Card>
+        </Link>
+        <Link to="/solar-pannel">
         <Card className="mt-6 sm:w-72">
           <CardHeader color="blue-gray" className="relative h-56">
             <img src={SolarPanelWithSun} alt="cardimage" className="h-full w-full"/>
@@ -58,6 +61,8 @@ We offer solar PV panels in both monocrystalline and polycrystalline technologie
             </Link>
           </CardFooter> */}
         </Card>
+        </Link>
+        <Link to='="/solar-pannel'>
         <Card className="mt-6 sm:w-72">
           <CardHeader color="blue-gray" className="relative h-56">
             <img src={SolarImg} alt="cardimage" className="h-full w-full"/>
@@ -73,6 +78,7 @@ We offer solar PV panels in both monocrystalline and polycrystalline technologie
             </Link>
           </CardFooter> */}
         </Card>
+        </Link>
         {/* <Card className="mt-6 sm:w-72">
           <CardHeader color="blue-gray" className="relative h-56">
             <img src={SolarPanelResidential} alt="cardimage" className="h-full w-full"/>
