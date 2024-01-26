@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bb2ec3e9.css",
-    "main.js": "/static/js/main.b81bf8fd.js",
+    "main.js": "/static/js/main.c5c67380.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
     "static/media/SOLARSHOP.png": "/static/media/SOLARSHOP.d70a2b02a72a4e6d1da3.png",
     "static/media/solarshophero.jpg": "/static/media/solarshophero.30b7e0c781bb46bf3e03.jpg",
@@ -19,11 +19,11 @@
     "index.html": "/index.html",
     "static/media/cloud.svg": "/static/media/cloud.209fd92f2a0e3bd10207fd4998814354.svg",
     "main.bb2ec3e9.css.map": "/static/css/main.bb2ec3e9.css.map",
-    "main.b81bf8fd.js.map": "/static/js/main.b81bf8fd.js.map",
+    "main.c5c67380.js.map": "/static/js/main.c5c67380.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb2ec3e9.css",
-    "static/js/main.b81bf8fd.js"
+    "static/js/main.c5c67380.js"
   ]
 }
