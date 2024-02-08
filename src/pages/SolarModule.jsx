@@ -38,11 +38,6 @@ const SolarModule = () => {
         </div>
         <div className="flex flex-wrap  gap-4 w-9/12">
           <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
         </div>
       </div>
     </>
