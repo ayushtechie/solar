@@ -8,6 +8,7 @@ import Chip from "@mui/joy/Chip";
 import Link from "@mui/joy/Link";
 import Typography from "@mui/joy/Typography";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import solarPanel from '../images/solarPanel.png'
 
 export default function ProductCard() {
   return (
@@ -15,15 +16,14 @@ export default function ProductCard() {
       <CardOverflow>
         <AspectRatio sx={{ minWidth: 200 }}>
           <img
-            src="https://images.unsplash.com/photo-1593121925328-369cc8459c08?auto=format&fit=crop&w=286"
-            srcSet="https://images.unsplash.com/photo-1593121925328-369cc8459c08?auto=format&fit=crop&w=286&dpr=2 2x"
+            src={solarPanel}
             loading="lazy"
             alt=""
           />
         </AspectRatio>
       </CardOverflow>
       <CardContent>
-        <Typography level="body-xs">Bluetooth Headset</Typography>
+        <Typography level="body-xs">105W/12V</Typography>
         <Link
           href="#product-card"
           fontWeight="md"
@@ -32,7 +32,7 @@ export default function ProductCard() {
           overlay
           endDecorator={<ArrowOutwardIcon />}
         >
-          Super Rockez A400
+Polycrystalline Solar Panel
         </Link>
 
         <Typography
@@ -44,7 +44,7 @@ export default function ProductCard() {
             </Chip>
           }
         >
-          2,900 THB
+          8,800 INR
         </Typography>
         <Typography level="body-sm">
           (Only <b>7</b> left in stock!)

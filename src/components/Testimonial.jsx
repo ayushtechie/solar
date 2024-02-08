@@ -1,3 +1,5 @@
+import mayank from '../images/mayank.jpg'
+
 export default function Testimonial() {
     return (
       <section className="relative isolate overflow-hidden bg-white px-6 py-6 sm:py-8 lg:px-8">
@@ -24,7 +26,7 @@ We are dedicated to helping our customers reduce their carbon footprint and save
             <figcaption className="mt-10">
               <img
                 className="mx-auto h-10 w-10 rounded-full"
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                src={mayank}
                 alt=""
               />
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
@@ -32,7 +34,7 @@ We are dedicated to helping our customers reduce their carbon footprint and save
                 <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-900">
                   <circle cx={1} cy={1} r={1} />
                 </svg>
-                <div className="text-gray-600">CEO of Workcation</div>
+                <div className="text-gray-600">CEO of SolarShopSolutions</div>
               </div>
             </figcaption>
           </figure>
