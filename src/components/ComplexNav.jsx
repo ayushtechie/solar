@@ -30,6 +30,7 @@ import {
   HomeIcon,
   Rss,
   RssIcon,
+  UserIcon,
 } from "@heroicons/react/24/solid";
 
 import SolarShop from "../images/SOLARSHOP.png";
@@ -234,6 +235,11 @@ const navListItems = [
     label: "Blog",
     url: "/blog",
     icon: RssIcon,
+  },
+  {
+    label: "Contact Us",
+    url: "/contact",
+    icon: UserIcon,
   },
 ];
 

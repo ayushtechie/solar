@@ -5,13 +5,14 @@ import Logos from "../components/Logos";
 import Whyus from "../components/Whyus";
 import Hero from "../components/Hero";
 import Estimater from "../components/Estimator";
+import FixedIconWithDialog from "../components/FixedIconWithDialog";
 
 
 const Home = () => {
   return (
     <>
       <div className="">
-        
+      <FixedIconWithDialog/>
         <Hero />
         <Estimater />
         <LookingFor />
