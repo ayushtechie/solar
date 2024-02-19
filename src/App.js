@@ -9,6 +9,8 @@ import Nopage from "./pages/NoPage";
 import SolarProducts from "./pages/SolarProducts";
 import Estimator from "./pages/Estimater";
 import SolarModule from "./pages/SolarModule";
+import MaintenancePage from "./components/MaintenancePage";
+import BlogPage from "./pages/BlogPage";
 
 function App() {
   return (
@@ -20,10 +22,12 @@ function App() {
           <Route path="/epc" element={<EPC />} />
           <Route path="/solar-panel" element={<SolarProducts />} />
           <Route path="/solar-panel/solar-module" element={<SolarModule />} />
+          <Route path="/blog" element={<BlogPage />} />
           <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>
     </BrowserRouter>
+    // <MaintenancePage/>
   );
 }
 

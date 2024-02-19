@@ -28,6 +28,8 @@ import {
   WrenchScrewdriverIcon,
   Bars2Icon,
   HomeIcon,
+  Rss,
+  RssIcon,
 } from "@heroicons/react/24/solid";
 
 import SolarShop from "../images/SOLARSHOP.png";
@@ -172,15 +174,15 @@ function NavListMenu() {
             </MenuItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden w-[22rem] grid-cols-7 gap-3 overflow-visible lg:grid">
-          <Card
+        <MenuList className="hidden w-[12rem] grid-cols-4 gap-3 overflow-visible lg:grid">
+          {/* <Card
             color="orange"
             shadow={false}
             variant="gradient"
             className="col-span-3 grid h-full w-full place-items-center rounded-md"
           >
             <WrenchScrewdriverIcon strokeWidth={1} className="h-28 w-28" />
-          </Card>
+          </Card> */}
           <ul className="col-span-4 flex w-full flex-col gap-1">
             {renderItems}
           </ul>
@@ -217,11 +219,7 @@ const socialMedia = [
 ];
 // nav list component
 const navListItems = [
-  {
-    label: "Home",
-    url: "/",
-    icon: HomeIcon,
-  },
+
   {
     label: "EPC",
     url: "/epc",
@@ -232,12 +230,18 @@ const navListItems = [
     url: "/estimater",
     icon: CodeBracketSquareIcon,
   },
+  {
+    label: "Blog",
+    url: "/blog",
+    icon: RssIcon,
+  },
 ];
 
 function NavList() {
   return (
     <>
       <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
+      <NavListMenu />
         {navListItems.map(({ label, icon, url }, key) => (
           <>
             <Link to={url} className="font-medium text-blue-gray-500">
@@ -263,7 +267,8 @@ function NavList() {
         </Typography> */}
           </>
         ))}
-        <NavListMenu />
+        
+        
         <ul className="mt-2 mb-4 flex gap-2 lg:mb-0 lg:mt-0 lg:mr-2 m-auto lg:items-center">
           {socialMedia.map(({ icon, url }, key) => (
             <SocialIcon url={url} style={{ height: 25, width: 25 }} target="_blank"/>
@@ -288,7 +293,7 @@ export function ComplexNav() {
 
   return (
     <Navbar
-      className="mx-auto max-w-screen-4xl p-0 lg:rounded-full lg:pl-6 sticky top-0 z-50"
+      className="mx-auto max-w-screen-4xl p-0 lg:pl-6 sticky top-0 z-50"
       style={{ backgroundColor: "#fff0d3" }}
     >
       <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
