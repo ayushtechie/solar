@@ -28,7 +28,7 @@ const Calculator = () => {
                     </form>
                 </div>
                 <div className="flex-col w-8/12">
-                    <div className="flex-col bg-green-600 text-white px-1 py-2 divide-y divide-slate-200" >
+                    <div className="flex-col bg-[#41ba6d] text-white px-1 py-2 divide-y divide-slate-200" >
                         <div className="flex justify-between w-11/12 m-auto pb-4">
                             <div>
                                 <p>0</p>
