@@ -5,27 +5,27 @@ const TABLE_HEAD = ["Company Name", "Area", "Distributor/Wholesaler", ];
 const TABLE_ROWS = [
   {
     name: "John Michael",
-    job: "Manager",
+    job: "Lucknow",
     date: "23/04/18",
   },
   {
     name: "Alexa Liras",
-    job: "Developer",
+    job: "Lucknow",
     date: "23/04/18",
   },
   {
     name: "Laurent Perrier",
-    job: "Executive",
+    job: "Lucknow",
     date: "19/09/17",
   },
   {
     name: "Michael Levi",
-    job: "Developer",
+    job: "Varanasi",
     date: "24/12/08",
   },
   {
     name: "Richard Gran",
-    job: "Manager",
+    job: "Varanasi",
     date: "04/10/21",
   },
 ];
@@ -53,7 +53,7 @@ export function Table() {
           {TABLE_ROWS.map(({ name, job, date }, index) => (
             <tr key={name} className="even:bg-blue-gray-50/50">
               <td className="p-4 text-center">
-                <Typography variant="small" color="blue-gray" className="font-normal">
+                <Typography variant="small" color="blue-gray" className="font-normal blur-sm">
                   {name}
                 </Typography>
               </td>

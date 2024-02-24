@@ -6,6 +6,7 @@ import Whyus from "../components/Whyus";
 import Hero from "../components/Hero";
 import Estimater from "../components/Estimator";
 import FixedIconWithDialog from "../components/FixedIconWithDialog";
+import Calculator from "../components/Calculator";
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <div className="">
       <FixedIconWithDialog/>
         <Hero />
+        <Calculator/>
         <Estimater />
         <LookingFor />
         <Whyus />

@@ -181,6 +181,20 @@ export default function Estimator() {
                 onChange={(e) => setRoofArea(e.target.value)}
               />
             </div>
+            <div className="flex-auto sm:w-3/12 px-2 py-2">
+              <label htmlFor="roof-area" className="block text-md font-medium leading-6 text-gray-900">
+                KW
+              </label>
+
+              <input
+              className="block w-full rounded-md border-0 mt-2 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                type="text"
+                name="roof-area"
+                id="roof-area"
+                placeholder="1000"
+                onChange={(e) => setRoofArea(e.target.value)}
+              />
+            </div>
           </div>
         </div>
         <div className="flex justify-center">

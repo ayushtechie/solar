@@ -2,7 +2,7 @@ const ContactPage = () => {
     return (
         <>
             <div className="flex">
-                <form action="" className="px-48 py-24 w-4/5">
+                <form action="" className="pl-48 pr-96 py-24 w-4/5">
                     <h2 className="text-4xl font-semibold tracking-wider">Contact Us</h2>
                     <p className="text-base px-2 py-1 text-gray-700 tracking-wider mb-8">Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
                     <input className="text-base px-2 py-1 block mb-2 w-full focus:outline-none focus:border-b-green-900 border-b-2" type="text" name="name" id="name" placeholder="Name" />
@@ -13,7 +13,7 @@ const ContactPage = () => {
                 </form>
                 <div className="bg-gradient-to-r from-green-300 to-orange-100 w-1/5"></div>
             </div>
-            <div className="absolute right-1 bg-black rounded-l-lg text-white top-36 h-96 w-96 p-5">
+            <div className="absolute right-36 bg-black rounded-l-[25px] text-white top-36 h-96 w-96 p-5">
                 <h2 className="text-3xl font-semibold tracking wider my-2">Contact Info</h2>
                 <a className="block my-2" href="tel:+918447705400">+918447705400</a>
                 <a className="block my-2" href="mailto:">mayank@solarshopsolutions.in</a>
