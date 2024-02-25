@@ -138,7 +138,7 @@ const Calculator = () => {
 
 
 
-            {showDiv && <div className="text-white  px-40  py-4 shadow-lg bg-cover bg-center bg-[url('https://res.cloudinary.com/dtyhpa19d/image/upload/v1708361078/SolarShopSolutions/industry-factory-area-solar-cells-electric-green-energy-solar-panels-line-view_44353-1405_yca3qe.jpg')]  ">
+            {showDiv && <div className="text-white  px-40  py-4 shadow-lg bg-cover bg-center bg-[url('https://res.cloudinary.com/dtyhpa19d/image/upload/v1708889340/SolarShopSolutions/industry-factory-area-solar-cells-electric-green-e_g41de6.svg')]  ">
                 <div className="backdrop-blur-sm">
 
                     <p className="text-white">The Honorable Prime Minister introduced the Pradhan Mantri Suryoday Yojana on 22 January 2024, commemorating the Ram Mandir opening in Ayodhya. About 1 crore households will benefit from this project by the Suryoday Yojana</p>
