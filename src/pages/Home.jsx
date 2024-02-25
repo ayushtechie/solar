@@ -4,7 +4,6 @@ import { LookingFor } from "../components/LookingFor";
 import Logos from "../components/Logos";
 import Whyus from "../components/Whyus";
 import Hero from "../components/Hero";
-import Estimater from "../components/Estimator";
 import FixedIconWithDialog from "../components/FixedIconWithDialog";
 import Calculator from "../components/Calculator";
 
@@ -16,7 +15,7 @@ const Home = () => {
       <FixedIconWithDialog/>
         <Hero />
         <Calculator/>
-        <Estimater />
+        {/* <Estimater /> */}
         <LookingFor />
         <Whyus />
         <Logos />
