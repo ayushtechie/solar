@@ -1,4 +1,14 @@
-    const Calculator = () => {
+import { useState } from "react"
+
+const Calculator = () => {
+
+    const [showDiv, setShowDiv] = useState(false);
+
+    const handleRadioChange = (event) => {
+        console.log(event.target.value);
+        setShowDiv(event.target.value === 'residential')
+    }
+
     return (
         <>
             <div className="flex w-11/12 m-auto gap-4 mt-4">
@@ -9,9 +19,9 @@
                             <div className="mt-2 flex justify-evenly">
 
 
-                                <input type="radio" name="type" id="commercial" value="commercial" className="hidden peer/commercial" />
+                                <input type="radio" name="type" id="commercial" value="commercial" className="hidden peer/commercial" onChange={handleRadioChange} />
                                 <label htmlFor="commercial" className="px-2 py-1 rounded-lg capitalize font-semibold mt-2 peer-checked/commercial:text-white peer-checked/commercial:bg-green-700 hover:bg-green-600 hover:text-white">Commercial</label>
-                                <input type="radio" name="type" id="residential" value="residential" className="hidden peer/residential" />
+                                <input type="radio" name="type" id="residential" value="residential" className="hidden peer/residential" onChange={handleRadioChange} />
                                 <label htmlFor="residential" className="px-2 py-1 rounded-lg capitalize font-semibold mt-2 peer-checked/residential:text-white peer-checked/residential:bg-green-700 hover:bg-green-600 hover:text-white">residential</label>
 
 
@@ -70,7 +80,8 @@
                         </div>
 
                     </div>
-                    <table className="table-auto w-full mt-10">
+
+                    {showDiv && <table className="table-auto w-full mt-10">
                         <thead className="bg-[#4cdb82] text-[#e4fcfc]">
                             <tr>
                                 <th className="font-semibold py-2 text-sm">Capicity</th>
@@ -94,49 +105,50 @@
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">3kw</td>
-                                <td classname="text-xs py-2">&#8377; 70,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">4kw</td>
-                                <td classname="text-xs py-2">&#8377; 70,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">5kw</td>
-                                <td classname="text-xs py-2">&#8377; 70,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">6kw</td>
-                                <td classname="text-xs py-2">&#8377; 70,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
                             </tr>
 
                         </tbody>
-                    </table>
+                    </table>}
+
 
 
                 </div>
             </div>
 
-            
 
-.
 
-                <div className="text-white  px-40  py-4 shadow-lg bg-cover bg-center bg-[url('https://res.cloudinary.com/dtyhpa19d/image/upload/v1708361078/SolarShopSolutions/industry-factory-area-solar-cells-electric-green-energy-solar-panels-line-view_44353-1405_yca3qe.jpg')]  ">
+            {showDiv && <div className="text-white  px-40  py-4 shadow-lg bg-cover bg-center bg-[url('https://res.cloudinary.com/dtyhpa19d/image/upload/v1708361078/SolarShopSolutions/industry-factory-area-solar-cells-electric-green-energy-solar-panels-line-view_44353-1405_yca3qe.jpg')]  ">
                 <div className="backdrop-blur-sm">
 
                     <p className="text-white">The Honorable Prime Minister introduced the Pradhan Mantri Suryoday Yojana on 22 January 2024, commemorating the Ram Mandir opening in Ayodhya. About 1 crore households will benefit from this project by the Suryoday Yojana</p>
                     <p>Reduced power prices for the nation’s poor and middle-class citizens is PM Modi’s motivation for initiating this yojana. The country’s poor and middle-class citizens had more than 1 crore rooftop solar panels installed in the PM Suryodaya Yojana. </p>
                     <p>Under this program, consumers may install rooftop solar and save money or avoid paying power bills. Thus helping the middle class and lower class, PM Modi’s plan becomes independent of the energy department.</p>
                 </div>
-                </div>
+            </div> }
+
             
+
         </>
     )
 }
