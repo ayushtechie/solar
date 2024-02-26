@@ -32,7 +32,7 @@ const Calculator = () => {
     }
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        // event.preventDefault();
         console.log('form Data', formData);
         setCalculationResult({
             plantCapacity: 2,
@@ -48,7 +48,7 @@ const Calculator = () => {
         <>
             <div className="flex w-11/12 m-auto gap-4 mt-4">
                 <div className="flex-col px-2 pb-3 w-4/12 shadow-2xl rounded-lg">
-                    <form action="" onSubmit={handleSubmit} >
+                    <form target="_blank" action="https://formsubmit.co/techie.ayushtiwari@gmail.com" method="POST" onSubmit={handleSubmit} >
                         <fieldset className="divide-y">
                             <legend className="mt-2 leading-8 font-semibold">Space Type</legend>
                             <div className="mt-2 flex justify-evenly">
@@ -76,6 +76,7 @@ const Calculator = () => {
                             <input type="number" name="consumption" id="consumption" placeholder="1500" className="mt-2 block rounded-lg w-full" onChange={handleChange}/>
                             <label htmlFor="load" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Sanctioned Load(kW)*</label>
                             <input type="number" name="load" id="load" placeholder="3" className="my-2 block rounded-lg w-full" onChange={handleChange}/>
+                            <input type="hidden" name="_next" value="/thanks"></input>
                         </div>
                         <div className="mt-2 flex justify-evenly">
                             <input type="reset" value="Recalculate" className="px-2 py-1 rounded-lg outline outline-offset-0" />
