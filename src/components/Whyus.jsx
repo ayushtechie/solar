@@ -1,18 +1,18 @@
 export default function Whyus() {
   return (
     <section className="flex flex-col items-center px-10">
-      <h1 className="text-center text-2xl font-bold my-2">Why Solar..?</h1>
+      <h1 className="text-center text-2xl font-bold my-2">Why SolarShopSolutions?</h1>
 
       <div className=" separator max-w-sm relative">
         <span
-          class="absolute rounded top-2 right-full w-28 h-1.5 px-2 border-t-2 border-green-500 bg-blue-500"
+          className="absolute rounded top-2 right-full w-28 h-1.5 px-2 border-t-2 border-green-500"
           aria-hidden="true"
         ></span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="w-6 h-6 text-blue-900"
+          className="w-6 h-6"
         >
           <path d="M15.75 8.25a.75.75 0 01.75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 11-.992-1.124A2.243 2.243 0 0015 9a.75.75 0 01.75-.75z" />
           <path
@@ -22,17 +22,17 @@ export default function Whyus() {
           />
         </svg>
         <span
-          class="absolute rounded top-2 left-full w-28 h-1.5 px-2 border-t-2 border-green-500 bg-blue-500"
+          className="absolute rounded top-2 left-full w-28 h-1.5 px-2 border-t-2 border-green-500"
           aria-hidden="true"
         ></span>
       </div>
       <div className="sm:flex flex-row w-full">
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900 hover:bg-blue-700 hover:text-white">
+        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-6 h-6 text-blue-900"
+            className="w-6 h-6"
           >
             <path
               fillRule="evenodd"
@@ -42,7 +42,7 @@ export default function Whyus() {
             <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
           </svg>
 
-          <h5 className="font-bold my-2 text-blue-900">
+          <h5 className="font-bold my-2">
             Less Electricity Bill
           </h5>
           <p className="text-sm">
@@ -50,12 +50,12 @@ export default function Whyus() {
             properties.
           </p>
         </div>
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900 hover:bg-blue-700 hover:text-white">
+        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-6 h-6 text-blue-900"
+            className="w-6 h-6"
           >
             <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
             <path
@@ -66,7 +66,7 @@ export default function Whyus() {
             <path d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z" />
           </svg>
 
-          <h5 className="font-bold my-2 text-blue-900">
+          <h5 className="font-bold my-2">
             Locked in electricity tariffs
           </h5>
           <p className="text-sm">
@@ -74,12 +74,13 @@ export default function Whyus() {
             power generation.
           </p>
         </div>
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900 hover:bg-blue-700 hover:text-white">
+        {/* <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900 hover:bg-blue-700 hover:text-white"> */}
+        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-6 h-6 text-blue-900"
+            className="w-6 h-6"
           >
             <path
               fillRule="evenodd"
@@ -88,7 +89,7 @@ export default function Whyus() {
             />
           </svg>
 
-          <h5 className="font-bold my-2 text-blue-900">
+          <h5 className="font-bold my-2">
             Reliable & Proven Technology
           </h5>
           <p className="text-sm">
@@ -97,12 +98,12 @@ export default function Whyus() {
             generation warranty on all Solar PV modules.
           </p>
         </div>
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900 hover:bg-blue-700 hover:text-white">
+        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-6 h-6 text-blue-900"
+            className="w-6 h-6"
           >
             <path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375z" />
             <path
@@ -112,19 +113,19 @@ export default function Whyus() {
             />
           </svg>
 
-          <h5 className="font-bold my-2 text-blue-900">Faster ROI</h5>
+          <h5 className="font-bold my-2">Faster ROI</h5>
           <p className="text-sm">
             Modern technology ensures significantly lower payback periods as low
             as 2 to 3 years. Solar systems for captive consumption also offer a
             high Internal Rate of Return (IRR) at around 20% to 22%.
           </p>
         </div>
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900 hover:bg-blue-700 hover:text-white">
+        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-6 h-6 text-blue-900"
+            className="w-6 h-6"
           >
             <path
               fillRule="evenodd"
@@ -133,7 +134,7 @@ export default function Whyus() {
             />
           </svg>
 
-          <h5 className="font-bold my-2 text-blue-900">
+          <h5 className="font-bold my-2">
             Lesser Carbon Foot Print
           </h5>
           <p className="text-sm">
@@ -141,12 +142,12 @@ export default function Whyus() {
             CO2 emissions over its lifetime.
           </p>
         </div>
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900 hover:bg-blue-700 hover:text-white">
+        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-6 h-6 text-blue-900"
+            className="w-6 h-6"
           >
             <path
               fillRule="evenodd"
@@ -155,7 +156,7 @@ export default function Whyus() {
             />
           </svg>
 
-          <h5 className="font-bold my-2 text-blue-900">
+          <h5 className="font-bold my-2">
             Sustainable Development Goal
           </h5>
           <p className="text-sm">

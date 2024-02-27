@@ -6,7 +6,7 @@ import Whyus from "../components/Whyus";
 import Hero from "../components/Hero";
 import FixedIconWithDialog from "../components/FixedIconWithDialog";
 import Calculator from "../components/Calculator";
-
+import HelpButton from "../components/NeedHelp";
 
 const Home = () => {
   return (
@@ -17,6 +17,7 @@ const Home = () => {
         <Calculator/>
         {/* <Estimater /> */}
         <LookingFor />
+        <HelpButton />
         <Whyus />
         <Logos />
         <Testimonial />

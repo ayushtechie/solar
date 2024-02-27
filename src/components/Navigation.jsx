@@ -11,6 +11,9 @@ const navigation = [
   href: '/solar-pannel',
   current: false,
 },
+  // { name: 'Blog', href: '/epc', current: false },
+  // { name: 'Contact Us', href: '/epc', current: false },
+  
 ]
 
 function classNames(...classes) {
