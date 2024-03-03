@@ -48,15 +48,19 @@ export default function CustomizedDialogs() {
       <img src={WhyUs4}  width={70} height={70}/>
       <img src={WhyUs5}  width={70} height={70}/>
       <img src={WhyUs6}  width={70} height={70}/>
+      
       </div>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
       >
-        <DialogTitle sx={{ m: 0, p: 2 }} className="information-dialog-title" id="customized-dialog-title">
-        WHAT ARE BENEFITS OF BUYING FROM SOLAR SHOP SOLUTIONS
-        </DialogTitle>
+        {/* <DialogTitle variant='h6'  sx={{ m: 0, p: 2 }} className="information-dialog-title" id="customized-dialog-title">
+        WHAT ARE BENEFITS OF BUYING FROM SOLAR SHOP SOLUTIONS?
+        </DialogTitle> */}
+        <div className="information-dialog-title" id="customized-dialog-title">
+        WHAT ARE BENEFITS OF BUYING FROM SOLAR SHOP SOLUTIONS?
+        </div>
         <IconButton
           aria-label="close"
           onClick={handleClose}
@@ -64,7 +68,7 @@ export default function CustomizedDialogs() {
             position: 'absolute',
             right: 8,
             top: 8,
-            color: (theme) => theme.palette.grey[500],
+            color: (theme) => theme.palette.error,
           }}
         >
           <CloseIcon />

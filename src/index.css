@@ -286,5 +286,10 @@ code {
 
 }
 .information-dialog-title{
-  font-weight: 700;
+  background-color: #fff0d3;
+  font-weight: 600;
+    /* font-size: 1.25rem; */
+    line-height: 1.6;
+    /* letter-spacing: 0.0075em; */
+    padding: 16px 24px
 }
