@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e4d31a69.css",
-    "main.js": "/static/js/main.46b308fa.js",
+    "main.css": "/static/css/main.4a8aaf45.css",
+    "main.js": "/static/js/main.3a55d198.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
     "static/media/SOLARSHOP.png": "/static/media/SOLARSHOP.d70a2b02a72a4e6d1da3.png",
     "static/media/solarshophero.jpg": "/static/media/solarshophero.30b7e0c781bb46bf3e03.jpg",
@@ -13,22 +13,28 @@
     "static/media/doubleSolarPanel1.png": "/static/media/doubleSolarPanel1.5d47f385277b398252f7.png",
     "static/media/singlePanel1.png": "/static/media/singlePanel1.db0a0bfc878daddfc6c0.png",
     "static/media/epcImage.jpg": "/static/media/epcImage.e3889d776bb27d58a2f5.jpg",
+    "static/media/whyUsMaintenance_769198.png": "/static/media/whyUsMaintenance_769198.2461055d88a53234cff0.png",
     "static/media/solarPanelWithPoll1.png": "/static/media/solarPanelWithPoll1.51434c075cf01b44d9c1.png",
+    "static/media/whyUsDecision-making_2620308.png": "/static/media/whyUsDecision-making_2620308.ec2fe03cb6bb109c1a50.png",
     "static/media/solar_engineers.svg": "/static/media/solar_engineers.07be2ca133b1556fd869403a8bf02ed2.svg",
+    "static/media/whyUsThumbs-up_6043309.png": "/static/media/whyUsThumbs-up_6043309.c0ca0834eda35ee08a45.png",
+    "static/media/whyUsTracking_13386211.png": "/static/media/whyUsTracking_13386211.73fda3c812375a4d2c7d.png",
+    "static/media/whyUsSolar-panels_4114997.png": "/static/media/whyUsSolar-panels_4114997.168ffe69e12973973d09.png",
     "static/media/undraw_under_construction_-46-pa.svg": "/static/media/undraw_under_construction_-46-pa.f1f20b42d6fb7280a4ac2e222bfbab48.svg",
     "static/media/undraw_control_panel_re_y3ar (1).svg": "/static/media/undraw_control_panel_re_y3ar (1).441bc4d0c4971d850355cc7ce8165531.svg",
     "static/media/Solar.jpg": "/static/media/Solar.dfbc788d52456c1c0d86.jpg",
+    "static/media/whyUsWarranty_950264.png": "/static/media/whyUsWarranty_950264.72cbacb531454a31f7c6.png",
     "static/media/SolarPanelWithSun.jpeg": "/static/media/SolarPanelWithSun.a7e5643aac0777324cab.jpeg",
     "static/media/mayank.jpg": "/static/media/mayank.27483a4d6919070ba8e4.jpg",
     "static/media/undraw_process_re_gws7.svg": "/static/media/undraw_process_re_gws7.cdeddc84c952212b5334c16d99a82afc.svg",
     "index.html": "/index.html",
     "static/media/cloud.svg": "/static/media/cloud.209fd92f2a0e3bd10207fd4998814354.svg",
-    "main.e4d31a69.css.map": "/static/css/main.e4d31a69.css.map",
-    "main.46b308fa.js.map": "/static/js/main.46b308fa.js.map",
+    "main.4a8aaf45.css.map": "/static/css/main.4a8aaf45.css.map",
+    "main.3a55d198.js.map": "/static/js/main.3a55d198.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4d31a69.css",
-    "static/js/main.46b308fa.js"
+    "static/css/main.4a8aaf45.css",
+    "static/js/main.3a55d198.js"
   ]
 }
