@@ -11,9 +11,11 @@ import Estimator from "./pages/Estimater";
 import SolarModule from "./pages/SolarModule";
 import MaintenancePage from "./components/MaintenancePage";
 import BlogPage from "./pages/BlogPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
+    
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -23,11 +25,13 @@ function App() {
           <Route path="/solar-panel" element={<SolarProducts />} />
           <Route path="/solar-panel/solar-module" element={<SolarModule />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>
     </BrowserRouter>
     // <MaintenancePage/>
+    
   );
 }
 

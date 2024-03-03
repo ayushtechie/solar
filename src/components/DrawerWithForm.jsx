@@ -82,11 +82,12 @@ export function DrawerWithForm() {
           <Input type="Name" label="Name" name="name" />
           <Input type="email" label="Email" name="email" />
           <Input type="phone" label="Phone number" name="phone" />
-          <Input type="text" label="Pin Code" name="pincode" />
-          <Input label="Subject" name="subject" />
-          <Textarea rows={2} label="Message" name="message" />
-          <input type="submit" value="Send" />
-          {/* <Button>Send Message</Button> */}
+          {/* <Input type="text" label="Pin Code" name="pincode" /> */}
+          {/* <Input label="Subject" name="subject" /> */}
+          <Textarea rows={2} label="Enter your query (Optional)" name="message" />
+          {/* <input type="submit" value="Send" /> */}
+          {/* <Button>Send</Button> */}
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">Send</button>
         </form>
       </Drawer>
     </React.Fragment>

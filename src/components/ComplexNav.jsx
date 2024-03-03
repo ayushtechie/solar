@@ -30,6 +30,7 @@ import {
   HomeIcon,
   Rss,
   RssIcon,
+  UserIcon,
 } from "@heroicons/react/24/solid";
 
 import SolarShop from "../images/SOLARSHOP.png";
@@ -144,10 +145,13 @@ const navListMenuItems = [
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+  // Sub nav size
+
   const renderItems = navListMenuItems.map(({ title, description, url }) => (
     <Link to={url} key={title}>
       <MenuItem>
-        <Typography variant="h6" color="blue-gray" className="mb-1">
+      
+        <Typography variant="div" color="blue-gray" className="mb-1 text-gray-900 font-medium">
           {title}
         </Typography>
         {/* <Typography variant="small" color="gray" className="font-normal">
@@ -157,14 +161,25 @@ function NavListMenu() {
     </Link>
   ));
 
+
+//   <Link to={url} className="font-medium text-blue-gray-500">
+//   {/* <MenuItem className="flex items-center gap-2 lg:rounded-full"> */}
+//   <MenuItem className="flex items-stretch gap-6">
+//     {/* {React.createElement(icon, {
+//       className: "h-[18px] w-[18px] text-green-600",
+//     })}{" "} */}
+//     <span className="text-gray-900"> {label}</span>
+//   </MenuItem>{" "}
+// </Link>
+
   return (
     <React.Fragment>
       <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
         <MenuHandler>
           <Typography as="a" href="#/solar-panel" variant="small" className="font-normal">
             <MenuItem className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full">
-              <Square3Stack3DIcon className="h-[18px] w-[18px] text-green-600" />{" "}
-              Solar Products{" "}
+              {/* <Square3Stack3DIcon className="h-[18px] w-[18px] text-green-600" />{" "} */}
+              <span className="font-medium text-blue-gray-500">Solar Products{" "}</span>
               <ChevronDownIcon
                 strokeWidth={2}
                 className={`h-3 w-3 transition-transform ${
@@ -174,7 +189,7 @@ function NavListMenu() {
             </MenuItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden w-[12rem] grid-cols-4 gap-3 overflow-visible lg:grid">
+        <MenuList className="hidden w-[12rem] grid-cols-1 gap-2 overflow-visible lg:grid">
           {/* <Card
             color="orange"
             shadow={false}
@@ -200,23 +215,23 @@ function NavListMenu() {
 }
 
 // social media
-const socialMedia = [
-  {
-    name: "facebook",
-    icon: HomeIcon,
-    url: "https://www.facebook.com",
-  },
-  {
-    name: "facebook",
-    icon: HomeIcon,
-    url: "https://www.instagram.com/solarshopsolutions/",
-  },
-  {
-    name: "Twitter",
-    icon: HomeIcon,
-    url: "https://www.x.com/solarshopsolu",
-  },
-];
+// const socialMedia = [
+//   {
+//     name: "facebook",
+//     icon: HomeIcon,
+//     url: "https://www.facebook.com",
+//   },
+//   {
+//     name: "facebook",
+//     icon: HomeIcon,
+//     url: "https://www.instagram.com/solarshopsolutions/",
+//   },
+//   {
+//     name: "Twitter",
+//     icon: HomeIcon,
+//     url: "https://www.x.com/solarshopsolu",
+//   },
+// ];
 // nav list component
 const navListItems = [
 
@@ -235,20 +250,26 @@ const navListItems = [
     url: "/blog",
     icon: RssIcon,
   },
+  {
+    label: "Contact Us",
+    url: "/contact",
+    icon: UserIcon,
+  },
 ];
 
 function NavList() {
   return (
     <>
-      <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
+      <ul className="mt-2 mb-4 flex flex-col gap-10 lg:mb-0 lg:mt-0 lg:flex-row lg:items-stretch">
       <NavListMenu />
         {navListItems.map(({ label, icon, url }, key) => (
           <>
             <Link to={url} className="font-medium text-blue-gray-500">
-              <MenuItem className="flex items-center gap-2 lg:rounded-full">
-                {React.createElement(icon, {
+              {/* <MenuItem className="flex items-center gap-2 lg:rounded-full"> */}
+              <MenuItem className="flex items-stretch gap-6">
+                {/* {React.createElement(icon, {
                   className: "h-[18px] w-[18px] text-green-600",
-                })}{" "}
+                })}{" "} */}
                 <span className="text-gray-900"> {label}</span>
               </MenuItem>{" "}
             </Link>
@@ -267,17 +288,28 @@ function NavList() {
         </Typography> */}
           </>
         ))}
+        </ul>
         
         
         <ul className="mt-2 mb-4 flex gap-2 lg:mb-0 lg:mt-0 lg:mr-2 m-auto lg:items-center">
+        <NavListMenu />
+        {/* <ul className="mt-2 mb-4 flex gap-2 lg:mb-0 lg:mt-0 lg:mr-2 m-auto lg:items-center">
           {socialMedia.map(({ icon, url }, key) => (
             <SocialIcon url={url} style={{ height: 25, width: 25 }} target="_blank"/>
           ))}
-        </ul>
+        </ul> */}
       </ul>
     </>
   );
 }
+
+{/* <NavListMenu />
+        {/* <ul className="mt-2 mb-4 flex gap-2 lg:mb-0 lg:mt-0 lg:mr-2 m-auto lg:items-center">
+>>>>>>> Stashed changes
+          {socialMedia.map(({ icon, url }, key) => (
+            <SocialIcon url={url} style={{ height: 25, width: 25 }} target="_blank"/>
+          ))}
+        </ul> */}
 
 export function ComplexNav() {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
@@ -295,8 +327,12 @@ export function ComplexNav() {
     <Navbar
       className="mx-auto max-w-screen-4xl p-0 lg:pl-6 sticky top-0 z-50"
       style={{ backgroundColor: "#fff0d3" }}
+      // className="mx-auto max-w-screen-4xl p-0 lg:rounded-full lg:pl-6 sticky top-0 z-50"
+      // className="mx-auto max-w-screen-4xl p-0 lg:pl-6 sticky top-0 z-50"
+      // style={{ backgroundColor: "" }}
     >
       <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
+        
         <Typography
           as="a"
           href="#"

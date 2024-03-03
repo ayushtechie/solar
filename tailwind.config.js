@@ -10,6 +10,7 @@ module.exports = withMT({
   plugins: [
     require('tailwindcss'),
     require('autoprefixer'),
+    require('@tailwindcss/forms'),
   ],
 })
 

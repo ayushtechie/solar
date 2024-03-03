@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background: transparent;
+  width: 60px;
+  height: 60px;
+  z-index: 9;
+  border-radius: 32px;
+}
+
+.icon {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  max-width: 600px; /* Adjust as needed */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
