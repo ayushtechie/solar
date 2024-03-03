@@ -1,15 +1,12 @@
 import { Typography } from "@material-tailwind/react";
-
 import React, { useRef, useEffect } from "react";
+import solarshophero from '../../src/images/solarshophero.jpg'
 
-import solarshophero from '../images/solarshophero.jpg'
- 
-// export default function Hero() {
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const colors = [solarshophero, solarshophero, solarshophero];
 const delay = 3000;
 
-export default function Hero() {
+export default function HomeSlideShow() {
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
 
@@ -41,11 +38,12 @@ export default function Hero() {
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {colors.map((backgroundColor, index) => (
-          <div
+          <img
             className="slide"
             key={index}
-            style={{ backgroundColor }}
-          ></div>
+            
+            src={backgroundColor}
+          />
         ))}
       </div>
 

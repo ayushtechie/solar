@@ -15,6 +15,7 @@ import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
+    
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -30,6 +31,7 @@ function App() {
       </Routes>
     </BrowserRouter>
     // <MaintenancePage/>
+    
   );
 }
 

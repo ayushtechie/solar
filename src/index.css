@@ -8,6 +8,17 @@
   /* Adjust the path based on your project structure */
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container{
+  display: flex;
+  flex-direction: column;
+}
+
 .mont-family {
   font-family: 'Mont';
 }
@@ -184,6 +195,13 @@ code {
 }
 
 
+/* Why Us Section */
+
+.help{
+  display: flex;
+  position: fixed;
+  width: 110px;
+}
 /* Slideshow */
 
 .slideshow {
@@ -248,4 +266,25 @@ code {
     margin-left: 0px;
     width: 156px;
 }
+}
+
+/* Information Dialog Button */
+.information-dialog{
+  /* width: fit-content; */
+  /* margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto; */
+  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.information-dialog-button{
+
+}
+.information-dialog-title{
+  font-weight: 700;
 }
