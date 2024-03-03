@@ -32,7 +32,20 @@ const Calculator = () => {
     }
 
     const handleSubmit = (event) => {
-        // event.preventDefault();
+        event.preventDefault();
+
+
+        // Validation for pincode
+    if (formData.pincode.trim() === '') {
+        alert('Please enter a valid pincode.');
+        return;
+    }
+
+    // Validation for phone number
+    if (formData.phone.trim() === '') {
+        alert('Please enter a valid phone number.');
+        return;
+    }
         console.log('form Data', formData);
         setCalculationResult({
             plantCapacity: 2,

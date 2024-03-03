@@ -16,9 +16,18 @@ import { Link } from "react-router-dom";
 export function LookingFor() {
   return (
     <>
-      <h2 className="text-xl text-center pt-4 pb-1 font-bold leading-7 text-blue-900 sm:truncate sm:text-3xl sm:tracking-tight">
+      <h2 className="text-3xl  text-center font-bold pt-4 pb-1 text-blue-900 sm:truncate sm:tracking-tight">
         Looking for
       </h2>
+      <div className="flex w-full h-96 mt-4" >
+        <div className="flex flex-1 relative justify-center">
+          <div className="flex absolute bottom-10 ">
+            <h2 className="text-md bg-[#ffffff87] hover:bg-green-700 hover:text-white text-center border rounded-lg py-1 px-6">EPC Contractor</h2>
+          </div>
+          <img src="https://res.cloudinary.com/dtyhpa19d/image/upload/v1709477330/SolarShopSolutions/The_Best_Solar_Companies_in_California_of_2023_dbehgm.jpg" alt="" width="100%" height="100%"/>
+        </div>
+        <div className="flex flex-1"></div>
+      </div>
       <div className="sm:flex justify-evenly py-8">
         <Link to='/epc'>
         <Card className="mt-6 sm:w-72 self-center">

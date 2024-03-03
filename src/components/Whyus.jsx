@@ -1,7 +1,7 @@
 export default function Whyus() {
   return (
     <section className="flex flex-col items-center px-10">
-      <h1 className="text-center text-2xl font-bold my-2">Why SolarShopSolutions?</h1>
+      <h1 className="text-center text-2xl font-bold my-2">Why Solar?</h1>
 
       <div className=" separator max-w-sm relative">
         <span
