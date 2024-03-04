@@ -134,6 +134,7 @@ const Calculator = () => {
                                 <th className="font-semibold py-2 text-sm">Center Subsidy</th>
                                 <th className="font-semibold py-2 text-sm">State Subsidy</th>
                                 <th className="font-semibold py-2 text-sm">Total Benifit</th>
+                                <th className="font-semibold py-2 text-sm">Total Cost</th>
                             </tr>
                         </thead>
                         <tbody className=" bg-[#e4ffeec2] text-center text-gray-400 divide-y">
@@ -142,36 +143,42 @@ const Calculator = () => {
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 15,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 45,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 63,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">2kw</td>
                                 <td classname="text-xs py-2">&#8377; 60,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 90,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 1,26,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">3kw</td>
                                 <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 1,89,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">4kw</td>
                                 <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 2,52,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">5kw</td>
                                 <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 3,15,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">6kw</td>
                                 <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 3,78,000.00</td>
                             </tr>
 
                         </tbody>
