@@ -29,7 +29,6 @@ const Calculator = () => {
 
     const handleChange = (event) => {
         const {name, value} = event.target;
-        setFormData({...formData, [name] : value})
         if (name === 'type' && value === 'residential') {
             setShowDiv(true);
         } else {
@@ -39,20 +38,12 @@ const Calculator = () => {
     }
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        // event.preventDefault();
 
+        const {name, value} = event.target;
+        setFormData({...formData, [name] : value})
 
-        // Validation for pincode
-    if (formData.pincode.trim() === '') {
-        alert('Please enter a valid pincode.');
-        return;
-    }
-
-    // Validation for phone number
-    if (formData.phone.trim() === '') {
-        alert('Please enter a valid phone number.');
-        return;
-    }
+   
         console.log('form Data', formData);
         setCalculationResult({
             plantCapacity: 2,
@@ -85,17 +76,17 @@ const Calculator = () => {
 
                         <div className="px-1 h-96 overflow-y-auto">
                             <label htmlFor="pincode" className="mt-2block text-sm font-medium leading-6 text-gray-600">Pincode*</label>
-                            <input type="text" name="pincode" id="pincode" placeholder="201301" className="mt-2 rounded-lg block w-full" onChange={handleChange}/>
+                            <input type="text" name="pincode" id="pincode" placeholder="201301" className="mt-2 rounded-lg block w-full" />
                             <label htmlFor="phone" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Phone*</label>
-                            <input type="tel" name="phone" id="phone" placeholder="9134567890" className="mt-2 block rounded-lg w-full" onChange={handleChange}/>
+                            <input type="tel" name="phone" id="phone" placeholder="9134567890" className="mt-2 block rounded-lg w-full" />
                             <label htmlFor="sqft" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Available Rooftop Space (Sq ft)</label>
-                            <input type="number" name="sqft" id="sqft" placeholder="1000" className="mt-2 block rounded-lg w-full" onChange={handleChange} />
+                            <input type="number" name="sqft" id="sqft" placeholder="1000" className="mt-2 block rounded-lg w-full"  />
                             <label htmlFor="tariff" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Enter Tariff (Rs/kWh)</label>
-                            <input type="number" name="tariff" id="tariff" placeholder="10" className="mt-2 block rounded-lg w-full" onChange={handleChange}/>
+                            <input type="number" name="tariff" id="tariff" placeholder="10" className="mt-2 block rounded-lg w-full" />
                             <label htmlFor="consumption" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Consumption (kWh/month)</label>
-                            <input type="number" name="consumption" id="consumption" placeholder="1500" className="mt-2 block rounded-lg w-full" onChange={handleChange}/>
+                            <input type="number" name="consumption" id="consumption" placeholder="1500" className="mt-2 block rounded-lg w-full" />
                             <label htmlFor="load" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Sanctioned Load(kW)*</label>
-                            <input type="number" name="load" id="load" placeholder="3" className="my-2 block rounded-lg w-full" onChange={handleChange}/>
+                            <input type="number" name="load" id="load" placeholder="3" className="my-2 block rounded-lg w-full" />
                             <input type="hidden" name="_next" value="/thanks"></input>
                         </div>
                         <div className="mt-2 flex justify-evenly">
