@@ -11,7 +11,7 @@ const Calculator = () => {
         CO2Saved: 0,
     });
 
-    const [showDiv, setShowDiv] = useState(false);
+    const [showDiv, setShowDiv] = useState(true);
 
     const [formData, setFormData] = useState({
         pincode: '',
@@ -20,14 +20,21 @@ const Calculator = () => {
         teriff: '',
         consumption: '',
         sectionedLoad: '',
+        type: ''
     })
 
 
+    
+
 
     const handleChange = (event) => {
-        const {name, valule} = event.target;
-        setFormData({...formData, [name] : valule})
-        setShowDiv(event.target.value === 'residential')
+        const {name, value} = event.target;
+        setFormData({...formData, [name] : value})
+        if (name === 'type' && value === 'residential') {
+            setShowDiv(true);
+        } else {
+            setShowDiv(false);
+        }
         
     }
 
@@ -65,7 +72,7 @@ const Calculator = () => {
                         <fieldset className="divide-y">
                             <legend className="mt-2 leading-8 font-semibold">Space Type</legend>
                             <div className="mt-2 flex justify-evenly">
-                            <input type="radio" name="type" id="residential" value="residential" className="hidden peer/residential" onChange={handleChange} />
+                            <input type="radio" name="type" id="residential" value="residential" className="hidden peer/residential" onChange={handleChange}/>
                                 <label htmlFor="residential" className="px-2 py-1 rounded-lg capitalize font-semibold mt-2 peer-checked/residential:text-white peer-checked/residential:bg-green-700 hover:bg-green-600 hover:text-white">residential</label>
 
                                 <input type="radio" name="type" id="commercial" value="commercial" className="hidden peer/commercial" onChange={handleChange} />
