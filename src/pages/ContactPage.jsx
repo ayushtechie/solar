@@ -47,46 +47,46 @@ const ContactPage = () => {
             <button type="submit" className="self-center mt-2 bg-green-700 text-white py-2 px-4 rounded-lg">Submit</button>
           </form>
         </div>
-        <div className="flex-1 bg-amber-100">
-          <h2>INFO</h2>
+        <div className="flex-1 p-2 bg-[#ffd75ea3]">
+          <h2 className="text-3xl">INFO</h2>
 
           <div className="flex flex-col gap-2">
-            <div className="flex">
-              <div className="w-1/6">
+            <div className="flex items-center gap-4">
+              <div className="w-1/6  p-2 rounded-full bg-gradient-to-t from-indigo-400 from-10% via-yellow-500 via-30% to-orange-500 to-90%">
                 <MapPinIcon />
               </div>
               <div className="w-5/6">
-                <h2>Office Address</h2>
+                <h2 className="text-xl">Office Address</h2>
                 <p>Sector 28, Gurugram, Sarhol, Haryana 122001</p>
               </div>
             </div>
 
-            <div className="flex">
-              <div className="w-1/6">
+            <div className="flex items-center gap-4">
+              <div className="w-1/6 bg-gradient-to-t from-indigo-400 from-10% via-yellow-500 via-30% to-orange-500 to-90% p-2 rounded-full">
                 <DevicePhoneMobileIcon />
               </div>
               <div className="w-5/6">
-                <h2>Telephone</h2>
+                <h2 className="text-xl">Telephone</h2>
                 <a href="tel:+918447705400">+918447705400</a>
               </div>
             </div>
 
-            <div className="flex">
-              <div className="w-1/6">
+            <div className="flex items-center gap-4">
+              <div className="w-1/6 p-2 rounded-full bg-gradient-to-t from-indigo-400 from-10% via-yellow-500 via-30% to-orange-500 to-90%">
                 <EnvelopeIcon />
               </div>
               <div className="w-5/6">
-                <h2>Mail Us</h2>
+                <h2 className="text-xl">Mail Us</h2>
                 <a href="mailto:mayank@solarshopsolutions.in">Support</a>
               </div>
             </div>
 
-            <div className="flex">
-              <div className="w-1/6">
+            <div className="flex items-center gap-4">
+              <div className="w-1/6 p-2 rounded-full bg-gradient-to-t from-indigo-400 from-10% via-yellow-500 via-30% to-orange-500 to-90%">
                 <ClockIcon />
               </div>
               <div className="w-5/6">
-                <h2>Opening Hours</h2>
+                <h2 className="text-xl">Opening Hours</h2>
               </div>
             </div>
           </div>
