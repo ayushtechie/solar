@@ -11,7 +11,7 @@ const Calculator = () => {
         CO2Saved: 0,
     });
 
-    const [showDiv, setShowDiv] = useState(false);
+    const [showDiv, setShowDiv] = useState(true);
 
     const [formData, setFormData] = useState({
         pincode: '',
@@ -20,19 +20,30 @@ const Calculator = () => {
         teriff: '',
         consumption: '',
         sectionedLoad: '',
+        type: ''
     })
 
 
+    
+
 
     const handleChange = (event) => {
-        const {name, valule} = event.target;
-        setFormData({...formData, [name] : valule})
-        setShowDiv(event.target.value === 'residential')
+        const {name, value} = event.target;
+        if (name === 'type' && value === 'residential') {
+            setShowDiv(true);
+        } else {
+            setShowDiv(false);
+        }
         
     }
 
     const handleSubmit = (event) => {
         // event.preventDefault();
+
+        const {name, value} = event.target;
+        setFormData({...formData, [name] : value})
+
+   
         console.log('form Data', formData);
         setCalculationResult({
             plantCapacity: 2,
@@ -52,7 +63,7 @@ const Calculator = () => {
                         <fieldset className="divide-y">
                             <legend className="mt-2 leading-8 font-semibold">Space Type</legend>
                             <div className="mt-2 flex justify-evenly">
-                            <input type="radio" name="type" id="residential" value="residential" className="hidden peer/residential" onChange={handleChange} />
+                            <input type="radio" name="type" id="residential" value="residential" className="hidden peer/residential" onChange={handleChange}/>
                                 <label htmlFor="residential" className="px-2 py-1 rounded-lg capitalize font-semibold mt-2 peer-checked/residential:text-white peer-checked/residential:bg-green-700 hover:bg-green-600 hover:text-white">residential</label>
 
                                 <input type="radio" name="type" id="commercial" value="commercial" className="hidden peer/commercial" onChange={handleChange} />
@@ -65,17 +76,17 @@ const Calculator = () => {
 
                         <div className="px-1 h-96 overflow-y-auto">
                             <label htmlFor="pincode" className="mt-2block text-sm font-medium leading-6 text-gray-600">Pincode*</label>
-                            <input type="text" name="pincode" id="pincode" placeholder="201301" className="mt-2 rounded-lg block w-full" onChange={handleChange}/>
+                            <input type="text" name="pincode" id="pincode" placeholder="201301" className="mt-2 rounded-lg block w-full" />
                             <label htmlFor="phone" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Phone*</label>
-                            <input type="tel" name="phone" id="phone" placeholder="9134567890" className="mt-2 block rounded-lg w-full" onChange={handleChange}/>
+                            <input type="tel" name="phone" id="phone" placeholder="9134567890" className="mt-2 block rounded-lg w-full" />
                             <label htmlFor="sqft" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Available Rooftop Space (Sq ft)</label>
-                            <input type="number" name="sqft" id="sqft" placeholder="1000" className="mt-2 block rounded-lg w-full" onChange={handleChange} />
+                            <input type="number" name="sqft" id="sqft" placeholder="1000" className="mt-2 block rounded-lg w-full"  />
                             <label htmlFor="tariff" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Enter Tariff (Rs/kWh)</label>
-                            <input type="number" name="tariff" id="tariff" placeholder="10" className="mt-2 block rounded-lg w-full" onChange={handleChange}/>
+                            <input type="number" name="tariff" id="tariff" placeholder="10" className="mt-2 block rounded-lg w-full" />
                             <label htmlFor="consumption" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Consumption (kWh/month)</label>
-                            <input type="number" name="consumption" id="consumption" placeholder="1500" className="mt-2 block rounded-lg w-full" onChange={handleChange}/>
+                            <input type="number" name="consumption" id="consumption" placeholder="1500" className="mt-2 block rounded-lg w-full" />
                             <label htmlFor="load" className="mt-2 block text-sm font-medium leading-6 text-gray-600">Sanctioned Load(kW)*</label>
-                            <input type="number" name="load" id="load" placeholder="3" className="my-2 block rounded-lg w-full" onChange={handleChange}/>
+                            <input type="number" name="load" id="load" placeholder="3" className="my-2 block rounded-lg w-full" />
                             <input type="hidden" name="_next" value="/thanks"></input>
                         </div>
                         <div className="mt-2 flex justify-evenly">
@@ -123,6 +134,7 @@ const Calculator = () => {
                                 <th className="font-semibold py-2 text-sm">Center Subsidy</th>
                                 <th className="font-semibold py-2 text-sm">State Subsidy</th>
                                 <th className="font-semibold py-2 text-sm">Total Benifit</th>
+                                <th className="font-semibold py-2 text-sm">Total Cost</th>
                             </tr>
                         </thead>
                         <tbody className=" bg-[#e4ffeec2] text-center text-gray-400 divide-y">
@@ -131,36 +143,42 @@ const Calculator = () => {
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 15,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 45,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 63,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">2kw</td>
                                 <td classname="text-xs py-2">&#8377; 60,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 90,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 1,26,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">3kw</td>
                                 <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 1,89,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">4kw</td>
                                 <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 2,52,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">5kw</td>
                                 <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 3,15,000.00</td>
                             </tr>
                             <tr>
                                 <td classname="text-xs py-2">6kw</td>
                                 <td classname="text-xs py-2">&#8377; 78,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 30,000.00</td>
                                 <td classname="text-xs py-2">&#8377; 1,08,000.00</td>
+                                <td classname="text-xs py-2">&#8377; 3,78,000.00</td>
                             </tr>
 
                         </tbody>

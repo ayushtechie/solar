@@ -16,7 +16,7 @@ const Home = () => {
         <FixedIconWithDialog/>
         <HomeSlideShow />
         <CustomizedDialogs/>
-        <Calculator/>
+        {/* <Calculator/> */}
         {/* <Estimater /> */}
         <LookingFor />
         {/* <HelpButton /> */}

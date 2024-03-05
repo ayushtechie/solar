@@ -38,25 +38,40 @@ export default function CustomizedDialogs() {
     <React.Fragment>
     <div className='help mx-auto max-w-screen-4xl p-0 lg:pl-6 sticky right-0 z-50'>
       <div className='relative mx-auto flex items-center justify-between text-blue-gray-900' style={{flexDirection: 'column'}}>
+      <h2>Why buy from SolarShopSolutions?</h2>
+      <ul>
+        <li>Experts Advice</li>
+        <li>Installation Service</li>
+        <li>Best Offers and Verfied Contracters</li>
+        <li>Warranty Claim</li>
+        <li>Maintenance Warranty</li>
+        <li>Keep Track Of Energy</li>
+      </ul>
       <Button variant="outlined" className="information-dialog-button" color="success" onClick={handleClickOpen}>
-        Why us?
+        Know More
       </Button>
+      </div>
       {/* <img src={SolarShop} alt="Logo" width={80} height={80} /> */}
-      <img src={WhyUs1}  width={70} height={70}/>
+      {/* <img src={WhyUs1}  width={70} height={70}/>
       <img src={WhyUs2}  width={70} height={70}/>
       <img src={WhyUs3}  width={70} height={70}/>
       <img src={WhyUs4}  width={70} height={70}/>
       <img src={WhyUs5}  width={70} height={70}/>
-      <img src={WhyUs6}  width={70} height={70}/>
-      </div>
+      <img src={WhyUs6}  width={70} height={70}/> */}
       <BootstrapDialog
+      className='bootStrappedDialog'
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
       >
-        <DialogTitle sx={{ m: 0, p: 2 }} className="information-dialog-title" id="customized-dialog-title">
-        WHAT ARE BENEFITS OF BUYING FROM SOLAR SHOP SOLUTIONS
-        </DialogTitle>
+        <div
+        className='bootStrappedDialog-Child'>
+        {/* <DialogTitle variant='h6'  sx={{ m: 0, p: 2 }} className="information-dialog-title" id="customized-dialog-title">
+        WHAT ARE BENEFITS OF BUYING FROM SOLAR SHOP SOLUTIONS?
+        </DialogTitle> */}
+        <div className="information-dialog-title" id="customized-dialog-title">
+        WHAT ARE BENEFITS OF BUYING FROM SOLAR SHOP SOLUTIONS?
+        </div>
         <IconButton
           aria-label="close"
           onClick={handleClose}
@@ -64,35 +79,82 @@ export default function CustomizedDialogs() {
             position: 'absolute',
             right: 8,
             top: 8,
-            color: (theme) => theme.palette.grey[500],
+            color: (theme) => theme.palette.error,
           }}
         >
           <CloseIcon />
         </IconButton>
-        <DialogContent dividers>
+        {/* <DialogContent dividers> */}
+        < div className='list-container'>
+          <ul>
           {/* <Typography gutterBottom> */}
             {/* Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
             consectetur ac, vestibulum at eros. */}
             
-             <Typography gutterBottom>
-             1. Unbiased advice from experts for all Solar Products and Equipments.
-            </Typography>
-             <Typography gutterBottom>
-             2. Installation from the best EPC contractor from Pan India
-            </Typography>
-             <Typography gutterBottom>
-             3. Get the best offers for your project from several verified EPC contractor from your region.
-            </Typography>
-             <Typography gutterBottom>
-             4. Claim your warranty directly from solar shop solutions without going to individual brand.
-            </Typography>
-             <Typography gutterBottom>
-             5. Get the additional maintenance warranty for 5 years from solar shop solutions
-            </Typography>
-             <Typography gutterBottom>
-             6. You can keep a track of your energy anywhere from the globe.
-            </Typography>
+             {/* <Typography gutterBottom> */}
+             <li>
+              <div  className='whyUsIcon'>
+                <img src={WhyUs1} alt="" />
+              </div>
+              <div className='whyUsTextContainer'>
+                <h3><strong>Experts Advice</strong></h3>
+                <p>Unbiased advice from experts for all Solar Products and Equipments.</p>
+              </div>
+             </li>
+            
+             
+             <li>
+              <div className='whyUsIcon'>
+                <img src={WhyUs3} alt="" />
+              </div>
+              <div className='whyUsTextContainer'>
+                <h3><strong>Installation Service</strong></h3>
+                <p>Installation Service available Pan India.</p>
+              </div>
+             </li>
+            
+             <li>
+              <div className='whyUsIcon'>
+                <img src={WhyUs4} alt="" />
+              </div>
+              <div className='whyUsTextContainer'>
+                <h3><strong>Best Offers and Verfied Contracters</strong></h3>
+                <p>Get the best offers for your project from several verified EPC contractor from your region.</p>
+              </div>
+             </li>
+            
+             <li>
+              <div className='whyUsIcon'>
+                <img src={WhyUs6} alt="" />
+              </div>
+              <div className='whyUsTextContainer'>
+                <h3><strong>Warranty Claim</strong></h3>
+                <p>Claim your warranty directly from solar shop solutions without going to individual brand.</p>
+              </div>
+             </li>
+            
+             
+             <li>
+              <div className='whyUsIcon'>
+                <img src={WhyUs2} alt="" />
+              </div>
+              <div className='whyUsTextContainer'>
+                <h3><strong>Maintenance Warranty</strong></h3>
+                <p>Get the additional maintenance warranty for 5 years from solar shop solutions.</p>
+              </div>
+             </li>
+       
+             <li>
+              <div className='whyUsIcon'>
+                <img src={WhyUs5} alt="" />
+              </div>
+              <div className='whyUsTextContainer'>
+                <h3><strong>Keep Track Of Energy</strong></h3>
+                <p>You can keep a track of your energy anywhere from the globe.</p>
+              </div>
+             </li>
+            {/* </Typography> */}
                  
           {/* </Typography> */}
           {/* <Typography gutterBottom>
@@ -104,12 +166,15 @@ export default function CustomizedDialogs() {
             magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
             ullamcorper nulla non metus auctor fringilla.
           </Typography> */}
-        </DialogContent>
+        {/* </DialogContent> */}
         {/* <DialogActions>
           <Button autoFocus onClick={handleClose}>
             Save changes
           </Button>
         </DialogActions> */}
+        </ul>
+        </div>
+        </div>
       </BootstrapDialog>
       </div>
     </React.Fragment>

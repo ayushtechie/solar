@@ -1,7 +1,7 @@
 export default function Whyus() {
   return (
     <section className="flex flex-col items-center px-10">
-      <h1 className="text-center text-2xl font-bold my-2">Why SolarShopSolutions?</h1>
+      <h1 className="text-center text-2xl font-bold my-2">Why Solar?</h1>
 
       <div className=" separator max-w-sm relative">
         <span
@@ -26,8 +26,9 @@ export default function Whyus() {
           aria-hidden="true"
         ></span>
       </div>
-      <div className="sm:flex flex-row w-full">
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
+      {/* Benifits Of Solar */}
+      <div className="shape-row sm:flex flex-row w-full">
+        <div className="hover-effects flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -50,7 +51,7 @@ export default function Whyus() {
             properties.
           </p>
         </div>
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
+        <div className="hover-effects flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -75,7 +76,7 @@ export default function Whyus() {
           </p>
         </div>
         {/* <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900 hover:bg-blue-700 hover:text-white"> */}
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
+        <div className="hover-effects flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -98,7 +99,7 @@ export default function Whyus() {
             generation warranty on all Solar PV modules.
           </p>
         </div>
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
+        <div className="hover-effects flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -120,7 +121,7 @@ export default function Whyus() {
             high Internal Rate of Return (IRR) at around 20% to 22%.
           </p>
         </div>
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
+        <div className="hover-effects flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -142,7 +143,7 @@ export default function Whyus() {
             CO2 emissions over its lifetime.
           </p>
         </div>
-        <div className="hov flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
+        <div className="hover-effects flex flex-col items-center basis-1/6 text-center sm:mx-1 my-2 p-2 rounded shadow shadow-blue-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
