@@ -20,7 +20,7 @@ export function LookingFor() {
         Looking for
       </h2>
 
-      <div className="sm:flex gap-4 py-8 pl-10 mr-44">
+      <div className="sm:flex gap-8 py-8 pl-10 sm:mr-44">
         <Link to="/epc" className="sm:flex-1">
           <Card className="mt-6 self-center">
             <CardHeader color="blue-gray" className="relative h-56">
@@ -42,10 +42,10 @@ export function LookingFor() {
           </Card>
         </Link>
 
-        <Link to='="/servies' className="sm:flex-1">
+        <Link to="/servies" className="sm:flex-1">
           <Card className="mt-6">
             <CardHeader color="blue-gray" className="relative h-56">
-              <img src={SolarImg} alt="cardimage" className="h-full w-full" />
+              <img src='https://res.cloudinary.com/dtyhpa19d/image/upload/v1709647565/SolarShopSolutions/Business_Plan-pana_mkvayu.png' alt="cardimage" className="h-full w-full bg-white" />
             </CardHeader>
             <CardBody>
               <Typography
