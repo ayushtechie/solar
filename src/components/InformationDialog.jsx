@@ -40,7 +40,7 @@ export default function CustomizedDialogs() {
       <div className='relative mx-auto flex items-center justify-between text-blue-gray-900' style={{flexDirection: 'column'}}>
       <h2>Why buy from SolarShopSolutions?</h2>
       <ul>
-        <li>Expert Advice</li>
+        <li>Experts Advice</li>
         <li>Installation Service</li>
         <li>Best Offers and Verfied Contracters</li>
         <li>Warranty Claim</li>
@@ -98,7 +98,7 @@ export default function CustomizedDialogs() {
                 <img src={WhyUs1} alt="" />
               </div>
               <div className='whyUsTextContainer'>
-                <h3><strong>Expert Advice</strong></h3>
+                <h3><strong>Experts Advice</strong></h3>
                 <p>Unbiased advice from experts for all Solar Products and Equipments.</p>
               </div>
              </li>
@@ -110,7 +110,7 @@ export default function CustomizedDialogs() {
               </div>
               <div className='whyUsTextContainer'>
                 <h3><strong>Installation Service</strong></h3>
-                <p>Installation from the best EPC contractor from Pan India.</p>
+                <p>Installation Service available Pan India.</p>
               </div>
              </li>
             
