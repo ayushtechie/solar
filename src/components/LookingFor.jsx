@@ -49,28 +49,7 @@ export function LookingFor() {
           </CardFooter> */}
         </Card>
         </Link>
-        <Link to="/solar-panel">
-        <Card className="mt-6 sm:w-72">
-          <CardHeader color="blue-gray" className="relative h-56">
-            <img src={SolarPanelWithSun} alt="cardimage" className="h-full w-full"/>
-          </CardHeader>
-          <CardBody>
-            <Typography variant="h5" color="blue-gray" className="mb-2">
-              Solar Products
-            </Typography>
-            {/* <Typography variant="p" color="blue-gray" className="mb-2 overflow-hidden h-[3em]">
-            Our solar panels are certified or tested to most reputed International standards such as TUV, UL, IEC, CE, MNRE, Clean Energy Council, etc They have strong mechanical strength and are certified to withstand high wind loads and snow loads while being extremely responsive in low light conditions capturing more sunlight in cloudy conditions ensuring better power generation.  The glass used in these solar panels are having ARC coatings.
-
-We offer solar PV panels in both monocrystalline and polycrystalline technologies in various wattage and cell configurations.  They are based on latest technologies
-            </Typography> */}
-          </CardBody>
-          {/* <CardFooter className="pt-0">
-            <Link to='/solar-pannel'>
-              <Button>Read More</Button>
-            </Link>
-          </CardFooter> */}
-        </Card>
-        </Link>
+        
         <Link to='="/solar-pannel'>
         <Card className="mt-6 sm:w-72">
           <CardHeader color="blue-gray" className="relative h-56">
