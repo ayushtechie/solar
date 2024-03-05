@@ -42,7 +42,7 @@ export default function CustomizedDialogs() {
       <ul>
         <li>Experts Advice</li>
         <li>Installation Service</li>
-        <li>Best Offers and Verfied Contracters</li>
+        <li>Best Offers and Verfied Contractors</li>
         <li>Warranty Claim</li>
         <li>Maintenance Warranty</li>
         <li>Keep Track Of Energy</li>
@@ -119,8 +119,8 @@ export default function CustomizedDialogs() {
                 <img src={WhyUs4} alt="" />
               </div>
               <div className='whyUsTextContainer'>
-                <h3><strong>Best Offers and Verfied Contracters</strong></h3>
-                <p>Get the best offers for your project from several verified EPC contractor from your region.</p>
+                <h3><strong>Best Offers and Verfied Contractors</strong></h3>
+                <p>Get the best offers for your project from several verified EPC contractors from your region.</p>
               </div>
              </li>
             
