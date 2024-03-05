@@ -50,7 +50,7 @@ export function LookingFor() {
         </Card>
         </Link>
         
-        <Link to='="/solar-pannel'>
+        <Link to='="/servies'>
         <Card className="mt-6 sm:w-72">
           <CardHeader color="blue-gray" className="relative h-56">
             <img src={SolarImg} alt="cardimage" className="h-full w-full"/>
