@@ -28,14 +28,14 @@ export function LookingFor() {
         </div>
         <div className="flex flex-1"></div>
       </div> */}
-      <div className="sm:flex justify-evenly py-8">
-        <Link to='/epc'>
-        <Card className="mt-6 sm:w-72 self-center">
+      <div className="sm:flex gap-4 py-8 pl-10 mr-44">
+        <Link to='/epc' className="sm:flex-auto sm:w-3/5">
+        <Card className="mt-6 self-center">
           <CardHeader color="blue-gray" className="relative h-56">
-            <img src={EPCcontractor} alt="cardimage" className="h-full w-full"/>
+            <img src="https://res.cloudinary.com/dtyhpa19d/image/upload/v1709625651/SolarShopSolutions/epcImage.jpg" alt="cardimage" className="h-full w-full"/>
           </CardHeader>
           <CardBody>
-            <Typography variant="h5" color="blue-gray" className="mb-2">
+            <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
               EPC Contractor
             </Typography>
             {/* <Typography variant="p" color="blue-gray" className="mb-2 overflow-hidden h-[3em]">
@@ -49,35 +49,14 @@ export function LookingFor() {
           </CardFooter> */}
         </Card>
         </Link>
-        <Link to="/solar-panel">
-        <Card className="mt-6 sm:w-72">
-          <CardHeader color="blue-gray" className="relative h-56">
-            <img src={SolarPanelWithSun} alt="cardimage" className="h-full w-full"/>
-          </CardHeader>
-          <CardBody>
-            <Typography variant="h5" color="blue-gray" className="mb-2">
-              Solar Products
-            </Typography>
-            {/* <Typography variant="p" color="blue-gray" className="mb-2 overflow-hidden h-[3em]">
-            Our solar panels are certified or tested to most reputed International standards such as TUV, UL, IEC, CE, MNRE, Clean Energy Council, etc They have strong mechanical strength and are certified to withstand high wind loads and snow loads while being extremely responsive in low light conditions capturing more sunlight in cloudy conditions ensuring better power generation.  The glass used in these solar panels are having ARC coatings.
-
-We offer solar PV panels in both monocrystalline and polycrystalline technologies in various wattage and cell configurations.  They are based on latest technologies
-            </Typography> */}
-          </CardBody>
-          {/* <CardFooter className="pt-0">
-            <Link to='/solar-pannel'>
-              <Button>Read More</Button>
-            </Link>
-          </CardFooter> */}
-        </Card>
-        </Link>
-        <Link to='="/solar-pannel'>
-        <Card className="mt-6 sm:w-72">
+        
+        <Link to='="/solar-pannel' className="sm:flex-auto">
+        <Card className="mt-6">
           <CardHeader color="blue-gray" className="relative h-56">
             <img src={SolarImg} alt="cardimage" className="h-full w-full"/>
           </CardHeader>
           <CardBody>
-            <Typography variant="h5" color="blue-gray" className="mb-2">
+            <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
               Services
             </Typography>
           </CardBody>
