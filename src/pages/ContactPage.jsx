@@ -4,7 +4,7 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/outline";
 import { DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
-import IndianMapSVG from "../components/IndianMap";
+import GoogleMap from "../components/IndianMap";
 
 
 
@@ -12,8 +12,8 @@ const ContactPage = () => {
   return (
     <>
       <div className="sm:flex h-[calc(100vh-80px)] items-center">
-        <div className="flex-1">
-<IndianMapSVG/>
+        <div className="flex-1 px-8 py-4">
+<GoogleMap/>
         </div>
         <div className="flex-1">
           <h1 className="text-center uppercase font-bold sm:text-[2.4vw]">
