@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bfeff2d1.css",
-    "main.js": "/static/js/main.37da1034.js",
+    "main.css": "/static/css/main.c4e9fd7b.css",
+    "main.js": "/static/js/main.01bdbf23.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
     "static/media/SOLARSHOP.png": "/static/media/SOLARSHOP.d70a2b02a72a4e6d1da3.png",
     "static/media/solarshophero.jpg": "/static/media/solarshophero.30b7e0c781bb46bf3e03.jpg",
@@ -9,6 +9,7 @@
     "static/media/solarpanelmodule.png": "/static/media/solarpanelmodule.892df031ad0aa461ea20.png",
     "static/media/residential.png": "/static/media/residential.820bbcd8a99eeb581ebe.png",
     "static/media/solarPanel.png": "/static/media/solarPanel.573600d1f94e9346e936.png",
+    "static/media/India-map-en-min.svg": "/static/media/India-map-en-min.cbaa6a5841eabc5b7ab23af55f57ba10.svg",
     "static/media/Mont-HeavyDEMO.otf": "/static/media/Mont-HeavyDEMO.a1c041a8d8e27fc771db.otf",
     "static/media/doubleSolarPanel1.png": "/static/media/doubleSolarPanel1.5d47f385277b398252f7.png",
     "static/media/singlePanel1.png": "/static/media/singlePanel1.db0a0bfc878daddfc6c0.png",
@@ -29,12 +30,12 @@
     "static/media/undraw_process_re_gws7.svg": "/static/media/undraw_process_re_gws7.cdeddc84c952212b5334c16d99a82afc.svg",
     "index.html": "/index.html",
     "static/media/cloud.svg": "/static/media/cloud.209fd92f2a0e3bd10207fd4998814354.svg",
-    "main.bfeff2d1.css.map": "/static/css/main.bfeff2d1.css.map",
-    "main.37da1034.js.map": "/static/js/main.37da1034.js.map",
+    "main.c4e9fd7b.css.map": "/static/css/main.c4e9fd7b.css.map",
+    "main.01bdbf23.js.map": "/static/js/main.01bdbf23.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfeff2d1.css",
-    "static/js/main.37da1034.js"
+    "static/css/main.c4e9fd7b.css",
+    "static/js/main.01bdbf23.js"
   ]
 }
