@@ -4,33 +4,73 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/outline";
 import { DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
-import GoogleMap from "../components/IndianMap";
-
-
+import indicate from "../images/indicate.png";
+import Map from "../components/IndianMap";
 
 const ContactPage = () => {
   return (
     <>
-      <div className="sm:flex h-[calc(100vh-80px)] items-center">
-        <div className="flex-1 px-8 py-4">
-<GoogleMap/>
+      <div className="sm:flex pt-[3.5vh]">
+        <div className="flex-1 flex items-center justify-center">
+          <div className="relative flex">
+            <div className="absolute md:top-44 lg:top-56 sm:left-56">
+              <img src={indicate} alt="" width="100%" height="100%" />
+            </div>
+          </div>
+          <Map/>
         </div>
         <div className="flex-1">
           <h1 className="text-center uppercase font-bold sm:text-[2.4vw]">
             Contact Us
           </h1>
-          <h3 className="text-xl text-center text-gray-700">
+          <h3 className="text-xl text-center font-light text-gray-600">
             SolarShopSolutions is the leading solar energy marketplace of <br />
             India helping industries shift to solar power more easily. <br />
             Contact us today to get a solar power plant installed at your site.
           </h3>
           <form className="w-[70%] mt-2 m-auto">
-            <input className="block w-full mt-2 rounded-lg" type="text" name="name" id="name" placeholder="Name"/>
-            <input className="block w-full mt-2 rounded-lg" type="tel" name="phone" id="phone" placeholder="Phone No"/>
-            <input className="block w-full mt-2 rounded-lg" type="text" name="cname" id="cname" placeholder="Company"/>
-            <input className="block w-full mt-2 rounded-lg" type="email" name="email" id="email" placeholder="Email"/>
-            <textarea className="block w-full mt-2 rounded-lg" placeholder="Comment" name="comment" id="comment" cols="30" rows="1"></textarea>
-            <button className="block mt-2 py-1 rounded-lg m-auto bg-black text-white w-2/6" type="submit">Get in tuch</button>
+            <input
+              className="block w-full mt-2 rounded-lg"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              className="block w-full mt-2 rounded-lg"
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Phone No"
+            />
+            <input
+              className="block w-full mt-2 rounded-lg"
+              type="text"
+              name="cname"
+              id="cname"
+              placeholder="Company"
+            />
+            <input
+              className="block w-full mt-2 rounded-lg"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <textarea
+              className="block w-full mt-2 rounded-lg"
+              placeholder="Comment"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="1"
+            ></textarea>
+            <button
+              className="block mt-2 py-1 rounded-lg m-auto bg-black text-white w-2/6"
+              type="submit"
+            >
+              Get in touch
+            </button>
           </form>
         </div>
       </div>
