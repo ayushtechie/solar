@@ -1,9 +1,9 @@
 import AboutImg from "../images/about.gif";
 function About() {
   return (
-    <div className="flex mx-auto w-5/6 pt-4">
+    <div className="sm:flex mx-auto w-11/12">
       <div className="flex-1">
-        <h1 className="text-2xl uppercase font-semibold pb-4">About Company</h1>
+        <h1 className="text-2xl uppercase font-semibold py-4">About Company</h1>
         <p className="leading-7 text-base">
           We are a solar products and services company that is committed to
           providing sustainable and cost-effective solutions to our customers.
