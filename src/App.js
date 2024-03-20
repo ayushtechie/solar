@@ -12,6 +12,8 @@ import SolarModule from "./pages/SolarModule";
 import MaintenancePage from "./components/MaintenancePage";
 import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
+import About from "./pages/About"
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
           <Route path="/solar-panel/solar-module" element={<SolarModule />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>

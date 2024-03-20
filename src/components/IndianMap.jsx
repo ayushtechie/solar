@@ -2,6 +2,14 @@ import { useState } from 'react';
 import IndiaMap from 'react-svgmap-india'
 
 const Map = () => {
+  const customMapData = {
+    UP: {
+      fill: '#007bff', // Blue color for Uttar Pradesh
+      stroke: '#4f4f4f',
+      strokeWidth: '1',
+      hoverFill: '#337037'
+    }
+  };
   const [state, setState] = useState('')
   return (
     <>

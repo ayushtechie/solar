@@ -246,6 +246,12 @@ const navListItems = [
     url: "/contact",
     icon: UserIcon,
   },
+  {
+    label: "About",
+    url: "/about",
+    icon: UserIcon,
+  },
+  
 ];
 
 function NavList() {

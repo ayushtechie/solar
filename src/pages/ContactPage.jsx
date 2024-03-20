@@ -28,8 +28,8 @@ const ContactPage = () => {
             Contact Us
           </h1>
           <h3 className="text-xl text-center font-light text-gray-600">
-            SolarShopSolutions is the leading solar energy marketplace of <br />
-            India helping industries shift to solar power more easily. <br />
+            SolarShopSolutions is the leading solar energy  <br />
+            marketplace of India helping industries shift to solar power more easily. <br />
             Contact us today to get a solar power plant installed at your site.
           </h3>
           <form className="w-[70%] mt-2 m-auto">
