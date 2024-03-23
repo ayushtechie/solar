@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f9a315ff.css",
-    "main.js": "/static/js/main.a8201b3f.js",
+    "main.css": "/static/css/main.98365d75.css",
+    "main.js": "/static/js/main.8d3368ac.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
     "static/media/SOLARSHOP.png": "/static/media/SOLARSHOP.d70a2b02a72a4e6d1da3.png",
     "static/media/solarshophero.jpg": "/static/media/solarshophero.30b7e0c781bb46bf3e03.jpg",
@@ -30,12 +30,12 @@
     "static/media/undraw_process_re_gws7.svg": "/static/media/undraw_process_re_gws7.cdeddc84c952212b5334c16d99a82afc.svg",
     "index.html": "/index.html",
     "static/media/cloud.svg": "/static/media/cloud.209fd92f2a0e3bd10207fd4998814354.svg",
-    "main.f9a315ff.css.map": "/static/css/main.f9a315ff.css.map",
-    "main.a8201b3f.js.map": "/static/js/main.a8201b3f.js.map",
+    "main.98365d75.css.map": "/static/css/main.98365d75.css.map",
+    "main.8d3368ac.js.map": "/static/js/main.8d3368ac.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9a315ff.css",
-    "static/js/main.a8201b3f.js"
+    "static/css/main.98365d75.css",
+    "static/js/main.8d3368ac.js"
   ]
 }
