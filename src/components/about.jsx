@@ -3,8 +3,9 @@ function About() {
   return (
     <div className="sm:flex mx-auto w-11/12">
       <div className="flex-1">
-        <h1 className="text-2xl uppercase font-semibold py-4">About Company</h1>
-        <p className="leading-7 text-base">
+        <h1 className="text-2xl uppercase font-semibold mt-8">About Us</h1>
+        <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+        <p className="leading-7 pt-2 text-base">
           We are a solar products and services company that is committed to
           providing sustainable and cost-effective solutions to our customers.
           Our team of experts has over 10 years of experience in the solar

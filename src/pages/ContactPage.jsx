@@ -11,25 +11,40 @@ const ContactPage = () => {
   return (
     <>
       <div className="sm:flex pt-[3.5vh]">
-        <div className="flex-1 flex justify-center">
-          
-            <div className="group">
-              <img src={indicate} alt="" width="60" height="60" className="absolute sm:top-60 sm:left-56 group-hover:visible"/>
-              <div className="invisible group-hover:visible absolute sm:top-60 sm:left-72 w-64 bg-white rounded-lg p-4">
-                <h2 className="text-lg underline">Delhi</h2>
-                <p>1024, opposite om bikaner, Maruti Vihar, Maruti Housing Colony, Sector 28, Gurugram, Sarhol, Haryana 122001</p>
-              </div>
-              </div>
-          
-          <Map/>
+        <div className="flex-1 m-auto">
+          <div className="relative">
+          <div className="flex items-center gap-2 absolute top-0 right-0">
+            <div className="w-4 h-4 bg-[#0e83bb]"></div>
+            <p>States with Solarshopsolutions Projects</p>
+          </div>
+          </div>
+          <div className="group">
+            <img
+              src={indicate}
+              alt=""
+              width="60"
+              height="60"
+              className="absolute sm:top-60 sm:left-56 group-hover:visible"
+            />
+            <div className="invisible group-hover:visible absolute sm:top-60 sm:left-72 w-64 bg-white rounded-lg p-4">
+              <h2 className="text-lg underline">Gurugram</h2>
+              <p>
+                1024, opposite om bikaner, Maruti Vihar, Maruti Housing Colony,
+                Sector 28, Gurugram, Sarhol, Haryana 122001
+              </p>
+            </div>
+          </div>
+
+          <Map />
         </div>
         <div className="flex-1">
           <h1 className="text-center uppercase font-bold sm:text-[2.4vw]">
             Contact Us
           </h1>
           <h3 className="text-xl text-center font-light text-gray-600">
-            SolarShopSolutions is the leading solar energy  <br />
-            marketplace of India helping industries shift to solar power more easily. <br />
+            SolarShopSolutions is the leading solar energy <br />
+            marketplace of India helping industries shift to solar power more
+            easily. <br />
             Contact us today to get a solar power plant installed at your site.
           </h3>
           <form className="w-[70%] mt-2 m-auto">

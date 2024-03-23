@@ -247,7 +247,7 @@ const navListItems = [
     icon: UserIcon,
   },
   {
-    label: "About",
+    label: "About Us",
     url: "/about",
     icon: UserIcon,
   },
